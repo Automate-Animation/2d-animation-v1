@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  gentle:
+    restart: always
+    image: lowerquality/gentle
+    ports:
+      - '49153:8765'
+    expose:
+      - 49153

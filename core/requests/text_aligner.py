@@ -1,13 +1,17 @@
+import json
 import google.generativeai as genai
+from prompts import prompts
 
 
 class TextAnalyzer:
-    def __init__(self, api_key, model_name="gemini-pro"):
+    def __init__(self, api_key, model_name="gemini-pro", prompt_file=prompts):
         self.api_key = api_key
         self.model_name = model_name
+        self.prompt_file = prompt_file
         self._configure_api()
         self.model = genai.GenerativeModel(self.model_name)
         self.chat = self.model.start_chat(history=[])
+        self.prompts = prompts
 
     def _configure_api(self):
         genai.configure(api_key=self.api_key)
@@ -26,44 +30,6 @@ class TextAnalyzer:
         word_count = len(text.split())
         return total_length, word_count
 
-    def create_prompt(self, text):
-        """
-        Create a prompt based on the input text for generating instructions.
-
-        Args:
-            text (str): The input text for which to create the prompt.
-
-        Returns:
-            str: The formatted prompt for the model.
-        """
-        total_length, word_count = self.analyze_string(text)
-        prompt = f"""
-        Review the following text carefully. Based on the text, provide instructions for head movements that would look natural as if you were engaging with the story. The only directions available are Left (L), Right (R), and Center (M). The head movements should align with the narrative flow and emphasize key elements of the story without being overly dynamic.
-
-        text:
-        ```
-        {text}
-        ```
-        Total Length: {total_length}
-        Word Count: {word_count}
-
-        Return the instructions in JSON format:
-        ```
-        [
-            {{
-                "text": {{"start": 0, "end": 4}},  // start and end should be based on the word count of the text.
-                "head_direction": ""  // choose only one: L, R, or M
-            }},
-            ...
-            {{
-                "text": {{"start": --, "end": {word_count}}},  // start and end should be based on the word count of the text.
-                "head_direction": ""  // choose only one: L, R, or M
-            }},
-        ]
-        ```
-        """
-        return prompt
-
     def get_head_movement_instructions(self, text):
         """
         Get head movement instructions based on the input text.
@@ -74,7 +40,11 @@ class TextAnalyzer:
         Returns:
             str: The response from the generative model.
         """
-        prompt = self.create_prompt(text)
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["head_movement_instructions"]
+        prompt = template.format(
+            text=text, total_length=total_length, word_count=word_count
+        )
         response = self.chat.send_message(prompt)
         return response.text
 

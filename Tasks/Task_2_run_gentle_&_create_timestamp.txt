@@ -1,0 +1,2 @@
+1. RUN Docker gentle go to Docker folder run 'sudo docker-compose up --build'
+2. Create the Timestamp go to 'core/requests' folder run 'gentle_request.py' make sure you update the location of audio and textscript

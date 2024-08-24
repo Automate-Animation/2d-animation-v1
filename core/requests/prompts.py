@@ -13,12 +13,12 @@ prompts = {
         [
             {{
                 "text": {{"start": 0, "end": 4}},  // start and end should be based on the word count of the text.
-                "head_direction": ""  // choose only one: L, R, or M
+                "direction": ""  // choose only one: L, R, or M
             }},
             ...
             {{
                 "text": {{"start": --, "end": {word_count}}},  // start and end should be based on the word count of the text.
-                "head_direction": ""  // choose only one: L, R, or M
+                "direction": ""  // choose only one: L, R, or M
             }},
         ]
         ```""",
@@ -36,12 +36,12 @@ prompts = {
         [
             {{
                 "text": {{"start": 0, "end": 4}},  // start and end should be based on the word count of the text.
-                "eye_direction": ""  // choose only one: L, R, or M
+                "direction": ""  // choose only one: L, R, or M
             }},
             ...
             {{
                 "text": {{"start": --, "end": {word_count}}},  // start and end should be based on the word count of the text.
-                "eye_direction": ""  // choose only one: L, R, or M
+                "direction": ""  // choose only one: L, R, or M
             }},
         ]
         ```"""

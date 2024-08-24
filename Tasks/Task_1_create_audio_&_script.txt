@@ -1,0 +1,4 @@
+TODO:
+1. Generate Audio and text script
+    a. Text script ChatGPT
+    b. Audio Generate using https://www.narakeet.com/

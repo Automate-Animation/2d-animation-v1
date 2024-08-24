@@ -1,0 +1,2 @@
+1. Write Prompt for align head and eyes using Gemini api.
+2. Gemini api return a json response.

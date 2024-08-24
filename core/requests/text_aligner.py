@@ -30,6 +30,37 @@ class TextAnalyzer:
         word_count = len(text.split())
         return total_length, word_count
 
+    def remove_json_code_block_markers(self, response):
+        # Remove the ```JSON and ``` markers from the response
+        return response.replace("```JSON\n", "").replace("```", "")
+
+    def extract_json_content(self, response):
+        # Initialize variables to store the start and end indices of the JSON content
+        start_index = None
+        end_index = None
+
+        # Search for the first occurrence of '[' or '{' in the string
+        for i, char in enumerate(response):
+            if char == "[" or char == "{":
+                start_index = i
+                break
+
+        # Search for the last occurrence of ']' or '}' in the string
+        for i, char in enumerate(reversed(response)):
+            if char == "]" or char == "}":
+                end_index = len(response) - i
+                break
+
+        # If both start and end indices are found, extract the content
+        if (
+            start_index is not None
+            and end_index is not None
+            and start_index < end_index
+        ):
+            return json.loads(response[start_index:end_index])
+        else:
+            return ""  # Return an empty string if no valid JSON content is found
+
     def get_head_movement_instructions(self, text):
         """
         Get head movement instructions based on the input text.
@@ -46,7 +77,25 @@ class TextAnalyzer:
             text=text, total_length=total_length, word_count=word_count
         )
         response = self.chat.send_message(prompt)
-        return response.text
+        return self.extract_json_content(response.text)
+
+    def get_eyes_movement_instructions(self, text):
+        """
+        Get eyes movement instructions based on the input text.
+
+        Args:
+            text (str): The input text to analyze.
+
+        Returns:
+            str: The response from the generative model.
+        """
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["eye_movement_instructions"]
+        prompt = template.format(
+            text=text, total_length=total_length, word_count=word_count
+        )
+        response = self.chat.send_message(prompt)
+        return self.extract_json_content(response.text)
 
 
 # Usage example
@@ -62,5 +111,5 @@ if __name__ == "__main__":
     Sprout became a symbol of bravery and determination, inspiring all who saw it."""
 
     # Get head movement instructions
-    instructions = analyzer.get_head_movement_instructions(text)
+    instructions = analyzer.get_eyes_movement_instructions(text)
     print(instructions)

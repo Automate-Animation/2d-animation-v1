@@ -1,4 +1,5 @@
 import requests
+import json
 
 
 class TranscriptionService:
@@ -59,3 +60,5 @@ if __name__ == "__main__":
     service = TranscriptionService(files=files)
     response_json = service.send_request()
     print(response_json)
+    with open("output_fi.json", "w") as json_file:
+        json.dump(response_json, json_file, indent=4)

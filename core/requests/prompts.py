@@ -89,4 +89,35 @@ prompts = {
         ]
         ```
         """,
+    "emotion_selector": """
+
+            Review the following text carefully. Based on the text, provide instructions to reflect the character's emotional state as described. The emotions should align with the narrative flow and emphasize key emotional elements of the story.
+            Given the following list of Emotions and their types:
+            ```
+            {emotions}
+
+            ```
+            text:
+            ```
+            {text}
+            ```
+
+            Total Length: {total_length}
+            Word Count: {word_count}
+
+            Return the instrunction in JSON format
+            ```
+            [
+                {{
+                    "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
+                    "emotion": N // choose only one: 1, 2..
+                }},
+                ...
+                {{
+                    "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
+                    "emotion": N // choose only one: 1, 2..
+                }},
+            ]
+            ```
+            """,
 }

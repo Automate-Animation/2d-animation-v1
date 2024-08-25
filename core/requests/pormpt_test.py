@@ -41,32 +41,35 @@ characters = {
     "4": {"name": "Mentor", "type": "Supporting"},
 }
 
+emotions = {
+    "1": "happy",
+    "2": "sad",
+    "3": "angry",
+    "4": "bore",
+    "5": "content",
+    "6": "glare",
+    "7": "sarcasm",
+    "8": "worried",
+    "9": "crazy",
+    "10": "evil_laugh",
+    "11": "lust",
+    "12": "shock",
+    "13": "silly",
+    "14": "spoked",
+}
+
 print(f"Total Length: {total_length}")
 print(f"Word Count: {word_count}")
 
 prompt = f"""
 
-Review the following text carefully. Based on the text, provide instructions for each character that would look natural as if you were engaging with the story.
-Given the following list of characters and their types:
+Review the following text carefully. Based on the text, provide instructions to reflect the character's emotional state as described. The emotions should align with the narrative flow and emphasize key emotional elements of the story.
+Given the following list of Emotions and their types:
 
 ```
-{characters}
+{emotions}
 
 ```
-Given the list of characters above, the characters should align with the narrative flow and emphasize key elements of the story without being overly dynamic.
-
-Task:
-
-Analyze the text below and identify:
-
-    If the text is a dialogue between characters:
-        Determine how many characters are speaking.
-        Provide their IDs and the ranges of their dialogue based on the word count.
-
-    If the text is a monologue (one person speaking):
-        Use only one character.
-        Indicate their ID and the range of the text they are speaking.
-text:
 ```
 {text}
 ```
@@ -79,12 +82,12 @@ Return the instrunction in JSON format
 [
     {{
         "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
-        "character": N // choose only one: 1, 2..
+        "emotion": N // choose only one: 1, 2..
     }},
     ...
     {{
         "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
-        "character": N // choose only one: 1, 2..
+        "emotion": N // choose only one: 1, 2..
     }},
 ]
 ```

@@ -130,6 +130,51 @@ class TextAnalyzer:
         response = self.chat.send_message(prompt)
         return self.extract_json_content(response.text)
 
+    def emotion_selector(self, text, emotions):
+        """
+        Analyzes the given text and generates a JSON response that reflects the character's emotional state based on the provided emotions.
+
+        Args:
+            text (str): The text to analyze for emotional content.
+            emotions (dict): A dictionary mapping emotion IDs to their descriptions.
+
+        Returns:
+            dict: A JSON object where each entry contains:
+                - "text": A dictionary with "start" and "end" indicating the segment of the text.
+                - "emotion": The selected emotion based on the provided emotions dictionary.
+
+        Example:
+            text = "John was thrilled to see his old friend again."
+            emotions = {
+                "1": "happy",
+                "2": "sad",
+                "3": "angry",
+                "4": "bore",
+                "5": "content",
+                "6": "glare",
+                "7": "sarcasm",
+                "8": "worried",
+                "9": "crazy",
+                "10": "evil_laugh",
+                "11": "lust",
+                "12": "shock",
+                "13": "silly",
+                "14": "spoked",
+            }
+            result = emotion_selector(text, emotions)
+            # result would be a JSON object reflecting the emotional content of the text.
+        """
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["emotion_selector"]
+        prompt = template.format(
+            text=text,
+            total_length=total_length,
+            word_count=word_count,
+            emotions=emotions,
+        )
+        response = self.chat.send_message(prompt)
+        return self.extract_json_content(response.text)
+
 
 # Usage example
 if __name__ == "__main__":
@@ -145,10 +190,27 @@ if __name__ == "__main__":
         "3": {"name": "Sidekick", "type": "Supporting"},
         "4": {"name": "Mentor", "type": "Supporting"},
     }
+    emotions = {
+        "1": "happy",
+        "2": "sad",
+        "3": "angry",
+        "4": "bore",
+        "5": "content",
+        "6": "glare",
+        "7": "sarcasm",
+        "8": "worried",
+        "9": "crazy",
+        "10": "evil_laugh",
+        "11": "lust",
+        "12": "shock",
+        "13": "silly",
+        "14": "spoked",
+    }
     # Test with a sample string
     text = """In a colorful meadow, a tiny seed named Sprout dreamed of becoming tall and strong. One day, a wind whispered stories of adventure and courage to Sprout. Inspired, Sprout decided to push through the soil. Despite facing hungry insects and pesky weeds, it persevered. Days turned into weeks, and Sprout grew into a majestic sunflower. From above, it saw the world and knew it had achieved its dreams. 
     Sprout became a symbol of bravery and determination, inspiring all who saw it."""
 
     # Get head movement instructions
-    instructions = analyzer.character_selector(text, characters)
+    # instructions = analyzer.character_selector(text, characters)
+    instructions = analyzer.emotion_selector(text, emotions)
     print(instructions)

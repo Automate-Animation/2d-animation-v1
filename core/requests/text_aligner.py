@@ -251,6 +251,17 @@ class TextAnalyzer:
         response = self.chat.send_message(prompt)
         return self.extract_json_content(response.text)
 
+    def intensity_selector(self, text):
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["intensity_selector"]
+        prompt = template.format(
+            text=text,
+            total_length=total_length,
+            word_count=word_count,
+        )
+        response = self.chat.send_message(prompt)
+        return self.extract_json_content(response.text)
+
 
 # Usage example
 if __name__ == "__main__":
@@ -336,5 +347,6 @@ if __name__ == "__main__":
     # Get head movement instructions
     # instructions = analyzer.character_selector(text, characters)
     # instructions = analyzer.emotion_selector(text, emotions)
-    instructions = analyzer.body_action_selector(text, body_actions)
+    # instructions = analyzer.body_action_selector(text, body_actions)
+    instructions = analyzer.intensity_selector(text)
     print(instructions)

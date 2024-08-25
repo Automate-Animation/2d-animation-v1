@@ -109,13 +109,11 @@ print(f"Word Count: {word_count}")
 
 prompt = f"""
 
-Review the following text carefully. Based on the text, provide instructions for body actions that would look dramatic and full of action. The available actions should emphasize key elements of the story, capturing dynamic moments without being too subtle.
-Given the following list of body actions and their types:
+Review the following text carefully. Identify and mark the moments of high intensity and emotional significance, ensuring that most of the text is marked with normal intensity. Only assign high intensity to parts that are particularly dramatic, intense, or show significant emotion.
 
-```
-{body_actions}
+Do not return an empty list. Ensure that there is at least one entry in the list, even if the intensity is normal.
 
-```
+text:
 ```
 {text}
 ```
@@ -123,17 +121,23 @@ Given the following list of body actions and their types:
 Total Length: {total_length}
 Word Count: {word_count}
 
+Guidelines:
+    Normal Intensity (2): Apply this to most of the text where the action or emotion is standard or subdued.
+    High Intensity (1): Apply this to moments of extreme action or significant emotion that are crucial to the story's dramatic impact.
+
+Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+
 Return the instrunction in JSON format
 ```
 [
     {{
         "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
-        "body_action": N // choose only one: 1, 2..
+        "intensity": N // choose only one: 1, 2
     }},
     ...
     {{
         "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
-        "body_action": N // choose only one: 1, 2..
+        "intensity": N // choose only one: 1, 2
     }},
 ]
 ```

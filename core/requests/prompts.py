@@ -8,6 +8,9 @@ prompts = {
         Total Length: {total_length}
         Word Count: {word_count}
 
+        Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+
+
         Return the instructions in JSON format:
         ```
         [
@@ -30,6 +33,8 @@ prompts = {
         ```
         Total Length: {total_length}
         Word Count: {word_count}
+        
+        Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
 
         Return the instructions in JSON format:
         ```
@@ -66,6 +71,9 @@ prompts = {
             If the text is a monologue (one person speaking):
                 Use only one character.
                 Indicate their ID and the range of the text they are speaking.
+
+        Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+
         text:
         ```
         {text}
@@ -105,6 +113,9 @@ prompts = {
             Total Length: {total_length}
             Word Count: {word_count}
 
+            Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+
+
             Return the instrunction in JSON format
             ```
             [
@@ -135,6 +146,9 @@ prompts = {
             Total Length: {total_length}
             Word Count: {word_count}
 
+            Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+
+
             Return the instrunction in JSON format
             ```
             [
@@ -150,4 +164,40 @@ prompts = {
             ]
             ```
             """,
+    "intensity_selector": """
+        Review the following text carefully. Identify and mark the moments of high intensity and emotional significance, ensuring that most of the text is marked with normal intensity. Only assign high intensity to parts that are particularly dramatic, intense, or show significant emotion.
+
+        Do not return an empty list. Ensure that there is at least one entry in the list, even if the intensity is normal.
+
+        text:
+        ```
+        {text}
+        ```
+
+        Total Length: {total_length}
+        Word Count: {word_count}
+
+        Guidelines:
+            Normal Intensity (2): Apply this to most of the text where the action or emotion is standard or subdued.
+            High Intensity (1): Apply this to moments of extreme action or significant emotion that are crucial to the story's dramatic impact.
+
+        Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+
+        Return the instrunction in JSON format
+        ```
+        [
+            {{
+                "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
+                "intensity": N // choose only one: 1, 2
+            }},
+            ...
+            {{
+                "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
+                "intensity": N // choose only one: 1, 2
+            }},
+        ]
+        ```
+
+
+        """,
 }

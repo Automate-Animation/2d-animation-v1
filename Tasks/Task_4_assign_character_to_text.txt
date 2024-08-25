@@ -1,0 +1,157 @@
+1. write a Prompt which identify how many people are talking using the text?
+2. "character": {
+    "1": {
+        "name": "Hero",
+        "type": "Protagonist"
+    },
+    "2": {
+        "name": "Villain",
+        "type": "Antagonist"
+    },
+    "3": {
+        "name": "Sidekick",
+        "type": "Supporting"
+    },
+    "4": {
+        "name": "Mentor",
+        "type": "Supporting"
+    },
+    "5": {
+        "name": "Comic Relief",
+        "type": "Supporting"
+    },
+    "6": {
+        "name": "Narrator",
+        "type": "Voice Over"
+    },
+    "7": {
+        "name": "Background Character 1",
+        "type": "Extra"
+    },
+    "8": {
+        "name": "Background Character 2",
+        "type": "Extra"
+    },
+    "9": {
+        "name": "Customer",
+        "type": "Minor"
+    },
+    "10": {
+        "name": "Shopkeeper",
+        "type": "Minor"
+    }
+}
+
+
+3. prompt:
+
+
+Review the following text carefully. Based on the text, provide instructions for each character that would look natural as if you were engaging with the story.
+Given the following list of characters and their types:
+
+```
+{'1': {'name': 'Hero', 'type': 'Protagonist'}, '2': {'name': 'Villain', 'type': 'Antagonist'}, '3': {'name': 'Sidekick', 'type': 'Supporting'}, '4': {'name': 'Mentor', 'type': 'Supporting'}}
+
+```
+Given the list of characters above, the characters should align with the narrative flow and emphasize key elements of the story without being overly dynamic.
+
+Task:
+
+Analyze the text below and identify:
+
+    If the text is a dialogue between characters:
+        Determine how many characters are speaking.
+        Provide their IDs and the ranges of their dialogue based on the word count.
+
+    If the text is a monologue (one person speaking):
+        Use only one character.
+        Indicate their ID and the range of the text they are speaking.
+text:
+```
+
+Hey, remember that hike we did last weekend? It was amazing!
+Totally! The views were breathtaking, and the fresh air was so invigorating.
+I know, right? I felt like I was on top of the world. And that little waterfall we stumbled upon was such a pleasant surprise.
+Me too! I love how nature can just pop up like that. It's like a hidden treasure.
+Speaking of treasures, I found this really cool rock on the way back down. It has this unique pattern on it.
+Wow, that's awesome! Can I see it?
+Sure. Here.
+It's beautiful! You should keep it as a souvenir.
+Maybe I will. I'll definitely frame it and hang it up.
+That's a great idea. It'll be a constant reminder of that unforgettable adventure.
+```
+
+Total Length: 691
+Word Count: 128
+
+Return the instrunction in JSON format
+```
+[
+    {
+        "text": {"start": X, "end": Y}, // start and end should be based on the word count of the text.
+        "character": N // choose only one: 1, 2..
+    },
+    ...
+    {
+        "text": {"start": X, "end": `word_count`}, // start and end should be based on the word count of the text.
+        "character": N // choose only one: 1, 2..
+    },
+]
+```
+
+
+
+---
+```json
+[
+  {
+    "text": {
+      "start": 0,
+      "end": 28
+    },
+    "character": 1
+  },
+  {
+    "text": {
+      "start": 29,
+      "end": 60
+    },
+    "character": 2
+  },
+  {
+    "text": {
+      "start": 61,
+      "end": 79
+    },
+    "character": 1
+  },
+  {
+    "text": {
+      "start": 80,
+      "end": 90
+    },
+    "character": 2
+  },
+  {
+    "text": {
+      "start": 91,
+      "end": 101
+    },
+    "character": 1
+  },
+  {
+    "text": {
+      "start": 102,
+      "end": 113
+    },
+    "character": 2
+  },
+  {
+    "text": {
+      "start": 114,
+      "end": 128
+    },
+    "character": 1
+  }
+]
+```

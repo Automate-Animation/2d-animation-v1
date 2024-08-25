@@ -175,6 +175,82 @@ class TextAnalyzer:
         response = self.chat.send_message(prompt)
         return self.extract_json_content(response.text)
 
+    def body_action_selector(self, text, body_actions):
+        """
+        Analyzes the given text and generates a JSON response that reflects dramatic body actions based on the provided body actions list.
+
+        Args:
+            text (str): The text to analyze for body actions.
+            body_actions (dict): A dictionary mapping body action IDs to their descriptions.
+
+        Returns:
+            dict: A JSON object where each entry contains:
+                - "text": A dictionary with "start" and "end" indicating the segment of the text.
+                - "body_action": The selected body action based on the provided body actions dictionary.
+
+        Example:
+            text = "He leaped across the room with an intense look on his face."
+            body_actions = {
+                "1": "achieve",
+                "2": "answer",
+                "3": "explain",
+                "4": "me",
+                "5": "not_me",
+                "6": "question",
+                "7": "technical",
+                "8": "why",
+                "9": "achieve",
+                "10": "answer",
+                "11": "chilling",
+                "12": "come",
+                "13": "confuse",
+                "14": "crazy",
+                "15": "dancing",
+                "16": "explain",
+                "17": "feeling_down",
+                "18": "hi",
+                "19": "i",
+                "20": "idea",
+                "21": "idk",
+                "22": "joy",
+                "23": "jumping",
+                "24": "kung_fu",
+                "25": "love",
+                "27": "meditation",
+                "28": "model",
+                "30": "paper",
+                "31": "praying",
+                "32": "question",
+                "33": "running",
+                "34": "search",
+                "35": "shy",
+                "36": "singing",
+                "37": "sneaky",
+                "38": "standing",
+                "39": "technical",
+                "40": "that",
+                "41": "thinking",
+                "42": "this",
+                "43": "what",
+                "44": "why",
+                "45": "winner",
+                "46": "yeah",
+                "47": "you",
+            }
+            result = body_action_selector(text, body_actions)
+            # result would be a JSON object reflecting the dramatic body actions described in the text.
+        """
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["body_action_selector"]
+        prompt = template.format(
+            text=text,
+            total_length=total_length,
+            word_count=word_count,
+            body_actions=body_actions,
+        )
+        response = self.chat.send_message(prompt)
+        return self.extract_json_content(response.text)
+
 
 # Usage example
 if __name__ == "__main__":
@@ -206,11 +282,59 @@ if __name__ == "__main__":
         "13": "silly",
         "14": "spoked",
     }
+    body_actions = {
+        "1": "achieve",
+        "2": "answer",
+        "3": "explain",
+        "4": "me",
+        "5": "not_me",
+        "6": "question",
+        "7": "technical",
+        "8": "why",
+        "9": "achieve",
+        "10": "answer",
+        "11": "chilling",
+        "12": "come",
+        "13": "confuse",
+        "14": "crazy",
+        "15": "dancing",
+        "16": "explain",
+        "17": "feeling_down",
+        "18": "hi",
+        "19": "i",
+        "20": "idea",
+        "21": "idk",
+        "22": "joy",
+        "23": "jumping",
+        "24": "kung_fu",
+        "25": "love",
+        "27": "meditation",
+        "28": "model",
+        "30": "paper",
+        "31": "praying",
+        "32": "question",
+        "33": "running",
+        "34": "search",
+        "35": "shy",
+        "36": "singing",
+        "37": "sneaky",
+        "38": "standing",
+        "39": "technical",
+        "40": "that",
+        "41": "thinking",
+        "42": "this",
+        "43": "what",
+        "44": "why",
+        "45": "winner",
+        "46": "yeah",
+        "47": "you",
+    }
     # Test with a sample string
     text = """In a colorful meadow, a tiny seed named Sprout dreamed of becoming tall and strong. One day, a wind whispered stories of adventure and courage to Sprout. Inspired, Sprout decided to push through the soil. Despite facing hungry insects and pesky weeds, it persevered. Days turned into weeks, and Sprout grew into a majestic sunflower. From above, it saw the world and knew it had achieved its dreams. 
     Sprout became a symbol of bravery and determination, inspiring all who saw it."""
 
     # Get head movement instructions
     # instructions = analyzer.character_selector(text, characters)
-    instructions = analyzer.emotion_selector(text, emotions)
+    # instructions = analyzer.emotion_selector(text, emotions)
+    instructions = analyzer.body_action_selector(text, body_actions)
     print(instructions)

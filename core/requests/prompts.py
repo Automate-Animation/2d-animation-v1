@@ -120,4 +120,34 @@ prompts = {
             ]
             ```
             """,
+    "body_action_selector": """
+            Review the following text carefully. Based on the text, provide instructions for body actions that would look dramatic and full of action. The available actions should emphasize key elements of the story, capturing dynamic moments without being too subtle.
+            Given the following list of body actions and their types:
+
+            ```
+            {body_actions}
+
+            ```
+            ```
+            {text}
+            ```
+
+            Total Length: {total_length}
+            Word Count: {word_count}
+
+            Return the instrunction in JSON format
+            ```
+            [
+                {{
+                    "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
+                    "body_action": N // choose only one: 1, 2..
+                }},
+                ...
+                {{
+                    "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
+                    "body_action": N // choose only one: 1, 2..
+                }},
+            ]
+            ```
+            """,
 }

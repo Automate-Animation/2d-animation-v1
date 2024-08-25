@@ -57,17 +57,63 @@ emotions = {
     "13": "silly",
     "14": "spoked",
 }
-
+body_actions = {
+    "1": "achieve",
+    "2": "answer",
+    "3": "explain",
+    "4": "me",
+    "5": "not_me",
+    "6": "question",
+    "7": "technical",
+    "8": "why",
+    "9": "achieve",
+    "10": "answer",
+    "11": "chilling",
+    "12": "come",
+    "13": "confuse",
+    "14": "crazy",
+    "15": "dancing",
+    "16": "explain",
+    "17": "feeling_down",
+    "18": "hi",
+    "19": "i",
+    "20": "idea",
+    "21": "idk",
+    "22": "joy",
+    "23": "jumping",
+    "24": "kung_fu",
+    "25": "love",
+    "27": "meditation",
+    "28": "model",
+    "30": "paper",
+    "31": "praying",
+    "32": "question",
+    "33": "running",
+    "34": "search",
+    "35": "shy",
+    "36": "singing",
+    "37": "sneaky",
+    "38": "standing",
+    "39": "technical",
+    "40": "that",
+    "41": "thinking",
+    "42": "this",
+    "43": "what",
+    "44": "why",
+    "45": "winner",
+    "46": "yeah",
+    "47": "you",
+}
 print(f"Total Length: {total_length}")
 print(f"Word Count: {word_count}")
 
 prompt = f"""
 
-Review the following text carefully. Based on the text, provide instructions to reflect the character's emotional state as described. The emotions should align with the narrative flow and emphasize key emotional elements of the story.
-Given the following list of Emotions and their types:
+Review the following text carefully. Based on the text, provide instructions for body actions that would look dramatic and full of action. The available actions should emphasize key elements of the story, capturing dynamic moments without being too subtle.
+Given the following list of body actions and their types:
 
 ```
-{emotions}
+{body_actions}
 
 ```
 ```
@@ -82,12 +128,12 @@ Return the instrunction in JSON format
 [
     {{
         "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
-        "emotion": N // choose only one: 1, 2..
+        "body_action": N // choose only one: 1, 2..
     }},
     ...
     {{
         "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
-        "emotion": N // choose only one: 1, 2..
+        "body_action": N // choose only one: 1, 2..
     }},
 ]
 ```

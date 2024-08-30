@@ -123,6 +123,3 @@ if __name__ == "__main__":
         response_json = json.load(json_file)
     add_phonemes(response_json)
     print(response_json)
-    
-
-

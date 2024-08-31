@@ -1,3 +1,31 @@
+from functools import wraps
+import time
+
+
+def retry(max_attempts=3, delay=1):
+    """A decorator that retries a function if it raises an exception."""
+
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            attempts = 0
+            while attempts < max_attempts:
+                try:
+                    # Attempt to run the function
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    # If the function raises an exception, print it and retry
+                    print(f"Attempt {attempts + 1} failed with error: {e}")
+                    attempts += 1
+                    time.sleep(delay)  # Optional: delay before retrying
+            # Raise the last exception if all attempts fail
+            raise Exception(f"Failed after {max_attempts} attempts.")
+
+        return wrapper
+
+    return decorator
+
+
 def get_direction_for_numbers(data, asset_type):
     """
     Creates a mapping of word indices to their corresponding directions.

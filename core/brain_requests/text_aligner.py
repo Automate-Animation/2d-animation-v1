@@ -1,6 +1,18 @@
 import json
 import google.generativeai as genai
 from .prompts import prompts
+from .validater import (
+    CharacterSchema,
+    validate_data,
+    HeadDirectionSchema,
+    EyesDirectionSchema,
+    EmotionSchema,
+    IntensitySchema,
+    ZoomSchema,
+    BodyActionSchema,
+    ScreenModeSchema,
+)
+from .utils import retry
 
 
 class TextAnalyzer:
@@ -25,10 +37,24 @@ class TextAnalyzer:
         # )
         return total_length, word_count
 
-    def _send_message_and_extract(self, prompt):
+    def _send_message_and_extract(self, prompt, schema):
         # Sends a prompt to the chat model and extracts the JSON content
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        max_attempts = 3
+        attempts = 0
+
+        while attempts < max_attempts:
+            response = self.chat.send_message(prompt)
+            data = self.extract_json_content(response.text)
+            status, message = validate_data(data, schema)
+
+            if status:
+                break
+
+            # Update prompt with validation message
+            prompt = prompt + "\n" + str(message)
+            attempts += 1
+
+        return data
 
     def remove_json_code_block_markers(self, response):
         return response.replace("```JSON\n", "").replace("```", "")
@@ -69,7 +95,8 @@ class TextAnalyzer:
         prompt = template.format(
             text=text, total_length=total_length, word_count=word_count
         )
-        return self._send_message_and_extract(prompt)
+        schema = HeadDirectionSchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
     def get_eyes_movement_instructions(self, text):
         print("Getting eyes movement instructions...")
@@ -78,8 +105,10 @@ class TextAnalyzer:
         prompt = template.format(
             text=text, total_length=total_length, word_count=word_count
         )
-        return self._send_message_and_extract(prompt)
+        schema = EyesDirectionSchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
+    @retry(max_attempts=3, delay=1)
     def get_character(self, text, characters):
         print("Analyzing character from text...")
         total_length, word_count = self.analyze_string(text)
@@ -90,7 +119,9 @@ class TextAnalyzer:
             word_count=word_count,
             characters=characters,
         )
-        return self._send_message_and_extract(prompt)
+        schema = CharacterSchema(many=True)
+        response = self._send_message_and_extract(prompt, schema)
+        return response
 
     def get_emotion(self, text, emotions):
         print("Analyzing emotion from text...")
@@ -102,7 +133,8 @@ class TextAnalyzer:
             word_count=word_count,
             emotions=emotions,
         )
-        return self._send_message_and_extract(prompt)
+        schema = EmotionSchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
     def get_body_action(self, text, body_actions):
         print("Analyzing body action from text...")
@@ -114,7 +146,8 @@ class TextAnalyzer:
             word_count=word_count,
             body_actions=body_actions,
         )
-        return self._send_message_and_extract(prompt)
+        schema = BodyActionSchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
     def get_intensity(self, text):
         print("Analyzing intensity from text...")
@@ -125,7 +158,8 @@ class TextAnalyzer:
             total_length=total_length,
             word_count=word_count,
         )
-        return self._send_message_and_extract(prompt)
+        schema = IntensitySchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
     def get_zoom(self, text):
         print("Analyzing zoom from text...")
@@ -136,7 +170,8 @@ class TextAnalyzer:
             total_length=total_length,
             word_count=word_count,
         )
-        return self._send_message_and_extract(prompt)
+        schema = ZoomSchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
     def get_screen_mode(self, text, screen_mode):
         print("Analyzing zoom from text...")
@@ -148,7 +183,8 @@ class TextAnalyzer:
             screen_mode=screen_mode,
             word_count=word_count,
         )
-        return self._send_message_and_extract(prompt)
+        schema = ScreenModeSchema(many=True)
+        return self._send_message_and_extract(prompt, schema)
 
 
 # Usage example

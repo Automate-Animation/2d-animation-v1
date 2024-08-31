@@ -138,6 +138,18 @@ class TextAnalyzer:
         )
         return self._send_message_and_extract(prompt)
 
+    def get_screen_mode(self, text, screen_mode):
+        print("Analyzing zoom from text...")
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["get_screen_mode"]
+        prompt = template.format(
+            text=text,
+            total_length=total_length,
+            screen_mode=screen_mode,
+            word_count=word_count,
+        )
+        return self._send_message_and_extract(prompt)
+
 
 # Usage example
 if __name__ == "__main__":

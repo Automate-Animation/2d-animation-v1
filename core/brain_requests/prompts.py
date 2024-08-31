@@ -183,8 +183,8 @@ prompts = {
         Word Count: {word_count}
 
         Guidelines:
-            Normal Intensity (2): Apply this to most of the text where the action or emotion is standard or subdued.
-            High Intensity (1): Apply this to moments of extreme action or significant emotion that are crucial to the story's dramatic impact.
+            Normal Intensity (1): Apply this to most of the text where the action or emotion is standard or subdued.
+            High Intensity (2): Apply this to moments of extreme action or significant emotion that are crucial to the story's dramatic impact.
 
         Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
         Do not return an empty list. Ensure that there is at least one entry in the list, even if all the zoom levels are normal.
@@ -243,5 +243,35 @@ prompts = {
         ```
 
 
+        """,
+    "get_screen_mode": """
+    
+        Review the following text carefully. Identify and select the most suitable background for each segment of the text to enhance the video's engagement and clarity. The background should align with the content's context, tone, and purpose.
+
+        Given the following list of screen mode and their types:
+
+        ```
+        {screen_mode}
+
+        ```
+
+        text:
+        ```
+        {text}
+        ```
+
+        Return the instrunction in JSON format
+        ```
+        [
+            {{
+                "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
+                "screen_mode": N // choose only one: 1, 2, 3, 4, 5,
+            ...
+            {{
+                "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
+                "screen_mode": N // choose only one: 1, 2, 3, 4, 5,
+            }},
+        ]
+        ```
         """,
 }

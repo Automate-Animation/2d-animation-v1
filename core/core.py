@@ -89,6 +89,30 @@ if __name__ == "__main__":
         "46": "yeah",
         "47": "you",
     }
+
+    screen_mode = {
+        "1": {
+            "name": "office",
+            "details": "Use this background when the content is formal, professional, or business-related.",
+        },
+        "2": {
+            "name": "explanation",
+            "details": "Apply this background when providing detailed explanations, tutorials, or educational content.",
+        },
+        "3": {
+            "name": "white",
+            "details": "Use this background for a clean, minimalistic look, ideal for content that requires focus without distractions.",
+        },
+        "4": {
+            "name": "plain",
+            "details": "Apply this background for neutral content that doesn’t need any specific emphasis or theme.",
+        },
+        "5": {
+            "name": "green",
+            "details": "Use this background when you plan to add a virtual background or need flexibility for future editing.",
+        },
+    }
+
     GOOGLE_API_KEY = "AIzaSyCpzGmA1jU2601Nyg1hMDposu_8WHYBdQY"
 
     # Initialize the TextAnalyzer class
@@ -110,14 +134,17 @@ if __name__ == "__main__":
     intensity = analyzer.get_intensity(transcript)
     time.sleep(6)
     zoom = analyzer.get_zoom(transcript)
+    time.sleep(6)
+    screen_mode = analyzer.get_screen_mode(transcript, screen_mode)
 
     update_values(response_json, head_movement, "head_direction", "M")
     update_values(response_json, eyes_movement, "eyes_direction", "M")
     update_values(response_json, character, "character", 1)
     update_values(response_json, emotions, "emotion", 1)
-    update_values(response_json, body_action, "body_action", "3")
-    update_values(response_json, intensity, "intensity", "1")
+    update_values(response_json, body_action, "body_action", 3)
+    update_values(response_json, intensity, "intensity", 1)
     update_values(response_json, zoom, "zoom", 0)
+    update_values(response_json, screen_mode, "screen_mode", 1)
 
     # add Phonemes and Frames
     add_phonemes(response_json)

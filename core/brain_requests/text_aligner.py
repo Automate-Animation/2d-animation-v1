@@ -5,7 +5,6 @@ from .prompts import prompts
 
 class TextAnalyzer:
     def __init__(self, api_key, model_name="gemini-pro", prompt_file=prompts):
-        print("Initializing TextAnalyzer...")
         self.api_key = api_key
         self.model_name = model_name
         self.prompt_file = prompt_file
@@ -13,28 +12,28 @@ class TextAnalyzer:
         self.model = genai.GenerativeModel(self.model_name)
         self.chat = self.model.start_chat(history=[])
         self.prompts = prompts
-        print(f"TextAnalyzer initialized with model: {self.model_name}")
 
     def _configure_api(self):
         print("Configuring API with provided API key...")
         genai.configure(api_key=self.api_key)
-        print("API configured.")
 
     def analyze_string(self, text):
-        print("Analyzing text string...")
         total_length = len(text)
         word_count = len(text.split())
-        print(
-            f"Text analysis complete: Total length = {total_length}, Word count = {word_count}"
-        )
+        # print(
+        #     f"Text analysis complete: Total length = {total_length}, Word count = {word_count}"
+        # )
         return total_length, word_count
 
+    def _send_message_and_extract(self, prompt):
+        # Sends a prompt to the chat model and extracts the JSON content
+        response = self.chat.send_message(prompt)
+        return self.extract_json_content(response.text)
+
     def remove_json_code_block_markers(self, response):
-        print("Removing JSON code block markers from response...")
         return response.replace("```JSON\n", "").replace("```", "")
 
     def extract_json_content(self, response):
-        print("Extracting JSON content from response...")
         start_index = None
         end_index = None
 
@@ -54,7 +53,11 @@ class TextAnalyzer:
             and start_index < end_index
         ):
             print("JSON content successfully extracted.")
-            return json.loads(response[start_index:end_index])
+            data = json.loads(response[start_index:end_index])
+            print("-------------")
+            print(data)
+            print("-------------")
+            return data
         else:
             print("No valid JSON content found.")
             return ""
@@ -66,8 +69,7 @@ class TextAnalyzer:
         prompt = template.format(
             text=text, total_length=total_length, word_count=word_count
         )
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        return self._send_message_and_extract(prompt)
 
     def get_eyes_movement_instructions(self, text):
         print("Getting eyes movement instructions...")
@@ -76,8 +78,7 @@ class TextAnalyzer:
         prompt = template.format(
             text=text, total_length=total_length, word_count=word_count
         )
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        return self._send_message_and_extract(prompt)
 
     def get_character(self, text, characters):
         print("Analyzing character from text...")
@@ -89,8 +90,7 @@ class TextAnalyzer:
             word_count=word_count,
             characters=characters,
         )
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        return self._send_message_and_extract(prompt)
 
     def get_emotion(self, text, emotions):
         print("Analyzing emotion from text...")
@@ -102,8 +102,7 @@ class TextAnalyzer:
             word_count=word_count,
             emotions=emotions,
         )
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        return self._send_message_and_extract(prompt)
 
     def get_body_action(self, text, body_actions):
         print("Analyzing body action from text...")
@@ -115,8 +114,7 @@ class TextAnalyzer:
             word_count=word_count,
             body_actions=body_actions,
         )
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        return self._send_message_and_extract(prompt)
 
     def get_intensity(self, text):
         print("Analyzing intensity from text...")
@@ -127,8 +125,18 @@ class TextAnalyzer:
             total_length=total_length,
             word_count=word_count,
         )
-        response = self.chat.send_message(prompt)
-        return self.extract_json_content(response.text)
+        return self._send_message_and_extract(prompt)
+
+    def get_zoom(self, text):
+        print("Analyzing zoom from text...")
+        total_length, word_count = self.analyze_string(text)
+        template = self.prompts["get_zoom"]
+        prompt = template.format(
+            text=text,
+            total_length=total_length,
+            word_count=word_count,
+        )
+        return self._send_message_and_extract(prompt)
 
 
 # Usage example
@@ -214,10 +222,11 @@ if __name__ == "__main__":
     Sprout became a symbol of bravery and determination, inspiring all who saw it."""
 
     print("Running text analysis methods...")
-    # instructions = analyzer.get_character(text, characters)
-    # instructions = analyzer.get_emotion(text, emotions)
-    # instructions = analyzer.get_body_action(text, body_actions)
-    # instructions = analyzer.get_intensity(text)
-    # print(instructions)
+    instructions = analyzer.get_character(text, characters)
+    instructions = analyzer.get_emotion(text, emotions)
+    instructions = analyzer.get_body_action(text, body_actions)
+    instructions = analyzer.get_intensity(text)
+    instructions = analyzer.get_zoom(text)
+    print(instructions)
 
     print("Main execution finished.")

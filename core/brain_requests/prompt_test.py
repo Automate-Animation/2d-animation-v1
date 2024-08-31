@@ -109,9 +109,9 @@ print(f"Word Count: {word_count}")
 
 prompt = f"""
 
-Review the following text carefully. Identify and mark the moments of high intensity and emotional significance, ensuring that most of the text is marked with normal intensity. Only assign high intensity to parts that are particularly dramatic, intense, or show significant emotion.
+Review the following text carefully. Identify and mark the moments that would benefit from different zoom levels to make the video more engaging. Assign appropriate zoom levels based on the content's significance, emotional impact, or to highlight key points and details.
 
-Do not return an empty list. Ensure that there is at least one entry in the list, even if the intensity is normal.
+Do not return an empty list. Ensure that there is at least one entry in the list, even if all the zoom levels are normal.
 
 text:
 ```
@@ -121,24 +121,25 @@ text:
 Total Length: {total_length}
 Word Count: {word_count}
 
-Guidelines:
-    Normal Intensity (2): Apply this to most of the text where the action or emotion is standard or subdued.
-    High Intensity (1): Apply this to moments of extreme action or significant emotion that are crucial to the story's dramatic impact.
+Guidelines for Zoom Levels:
 
-Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
+    Normal Zoom (0): Use this for most of the text where the action or dialogue is routine or does not require emphasis.
+    Moderate Zoom (1): Apply this to moments that need some focus to enhance viewer engagement, such as when highlighting an important point, detail, or subtle emotion.
+    High Zoom (2): Use this for moments of significant emotion, dramatic impact, or crucial content that requires intense focus.
 
+Ensure that all significant segments of the text are covered and none are omitted. The list should include all relevant entries based on the criteria above.
 Return the instrunction in JSON format
 ```
 [
     {{
         "text": {{"start": X, "end": Y}}, // start and end should be based on the word count of the text.
-        "intensity": N // choose only one: 1, 2
+        "zoom": N // choose only one: 0 (Normal Zoom), 1 (Moderate Zoom), 2 (High Zoom)
     }},
     ...
     {{
         "text": {{"start": X, "end": `word_count`}}, // start and end should be based on the word count of the text.
-        "intensity": N // choose only one: 1, 2
-    }},
+        "zoom": N // choose only one: 0 (Normal Zoom), 1 (Moderate Zoom), 2 (High Zoom)   
+     }},
 ]
 ```
 

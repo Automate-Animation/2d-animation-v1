@@ -31,7 +31,7 @@ class CharacterManager:
 
         return os.path.splitext(selected_file)[0]
 
-    def get_body_or_background_image_path(
+    def get_character_asset_path(
         self, character, asset_type, asset_sub_type, asset_name
     ):
         return os.path.join(
@@ -47,9 +47,13 @@ class CharacterManager:
             asset_name = self.get_random_png_file_name(
                 character, asset_type, asset_sub_type
             )
-            image_path = self.get_body_or_background_image_path(
+            image_path = self.get_character_asset_path(
                 character, asset_type, asset_sub_type, asset_name
             )
+        elif asset_type == "mouth":
+            asset_name = exta.get('name', None)
+            image_path = self.get_character_asset_path(
+            character, asset_type, asset_sub_type, asset_name)
 
         return Image.open(image_path), asset_name
 

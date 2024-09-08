@@ -13,8 +13,8 @@ metadata_file = "/home/oye/Documents/animation_software/2d-animation-v1/core/ima
 manager = CharacterManager(base_path, metadata_file)
 
 character = "character_1"
-asset_type = "body"
-asset_sub_type = "you"
+asset_type = "background"
+asset_sub_type = "black"
 asset_name = "body1"
 
 image, metadata = manager.get_asset(character, asset_type, asset_sub_type)

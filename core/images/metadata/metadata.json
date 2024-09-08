@@ -4,7 +4,9 @@
             "office": { "body_size": [750, 1080], "body_position": [690, 150], "mirror":false, "addition":true , "zoom_point":[950, 370]},
             "explaination": { "body_size": [750, 1080], "body_position": [20, 160], "mirror":false,"addition":true , "zoom_point":[700, 400]},
             "white": { "body_size": [750, 1080], "body_position": [20, 160], "mirror":false,"addition":false, "zoom_point":[120, 216] },
-            "plain": { "body_size": [750, 1080], "body_position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] }
+            "black": { "body_size": [750, 1080], "body_position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] },
+            "green": { "body_size": [750, 1080], "body_position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] },
+            "orange": { "body_size": [750, 1080], "body_position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] }
         },        
         "body": {
             "body1": { "head_size": [285, 255], "head_position": [240, 35] },

@@ -41,8 +41,8 @@ class CharacterManager:
     def get_asset_metadata(self, character, asset_type, asset_name):
         return self.metadata[character][asset_type][asset_name]
 
-    def load_image(self, character, asset_type=None, asset_sub_type=None):
-        if asset_type == "body" or asset_type == "background":
+    def load_image(self, character, asset_type=None, asset_sub_type=None, exta={}):
+        if asset_type == "body" or asset_type == "background" or asset_type == "head":
             print(character, asset_type)
             asset_name = self.get_random_png_file_name(
                 character, asset_type, asset_sub_type
@@ -51,12 +51,14 @@ class CharacterManager:
                 character, asset_type, asset_sub_type, asset_name
             )
 
-        # image_path = self.get_image_path(character, asset_type, asset_name)
         return Image.open(image_path), asset_name
 
-    def get_asset(self, character, asset_type, asset_sub_type):
-        image, asset_name = self.load_image(character, asset_type, asset_sub_type)
-        metadata = self.get_asset_metadata(character, asset_type, asset_name)
+    def get_asset(self, character, asset_type, asset_sub_type, exta={}):
+        image, asset_name = self.load_image(character, asset_type, asset_sub_type, exta)
+        if asset_type != "head":
+            metadata = self.get_asset_metadata(character, asset_type, asset_name)
+        else:
+            metadata = None
         return image, metadata
 
     def zoom_at(self, img, x, y, zoom):

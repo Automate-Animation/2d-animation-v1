@@ -13,12 +13,12 @@ metadata_file = "/home/oye/Documents/animation_software/2d-animation-v1/core/ima
 manager = CharacterManager(base_path, metadata_file)
 
 character = "character_1"
-asset_type = "background"
-asset_sub_type = "black"
-asset_name = "body1"
+asset_type = "head"
+asset_sub_type = "M"
+exta = {}
 
-image, metadata = manager.get_asset(character, asset_type, asset_sub_type)
-print(f"Loaded {asset_name} with metadata: {metadata}")
+image, metadata = manager.get_asset(character, asset_type, asset_sub_type, exta)
+print(f"Loaded {exta} with metadata: {metadata}")
 image.show()
 
 # Additional functionality usage

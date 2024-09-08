@@ -1,0 +1,4031 @@
+{
+    "transcript": "In a colorful meadow, a tiny seed named Sprout dreamed of becoming tall and strong. One day, a wind whispered stories of adventure and courage to Sprout. Inspired, Sprout decided to push through the soil. Despite facing hungry insects and pesky weeds, it persevered. Days turned into weeks, and Sprout grew into a majestic sunflower. From above, it saw the world and knew it had achieved its dreams. Sprout became a symbol of bravery and determination, inspiring all who saw it.",
+    "words": [
+        {
+            "alignedWord": "in",
+            "case": "success",
+            "end": 0.24000000000000002,
+            "endOffset": 2,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "n_E"
+                }
+            ],
+            "start": 0.1,
+            "startOffset": 0,
+            "word": "In",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH0",
+                "N"
+            ],
+            "init_frame": 3,
+            "final_frame": 6,
+            "diff": 3,
+            "phonemes_frame": {
+                "IH0": 2,
+                "N": 1
+            }
+        },
+        {
+            "alignedWord": "a",
+            "case": "success",
+            "end": 0.3,
+            "endOffset": 4,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "ah_S"
+                }
+            ],
+            "start": 0.24,
+            "startOffset": 3,
+            "word": "a",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0"
+            ],
+            "init_frame": 6,
+            "final_frame": 8,
+            "diff": 2,
+            "phonemes_frame": {
+                "AH0": 2
+            }
+        },
+        {
+            "alignedWord": "colorful",
+            "case": "success",
+            "end": 0.8200000000000001,
+            "endOffset": 13,
+            "phones": [
+                {
+                    "duration": 0.12,
+                    "phone": "k_B"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "l_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "f_I"
+                },
+                {
+                    "duration": 0.03,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "l_E"
+                }
+            ],
+            "start": 0.3,
+            "startOffset": 5,
+            "word": "colorful",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "K",
+                "AH1",
+                "L",
+                "ER0",
+                "F",
+                "AH0",
+                "L"
+            ],
+            "init_frame": 8,
+            "final_frame": 20,
+            "diff": 12,
+            "phonemes_frame": {
+                "K": 2,
+                "AH1": 2,
+                "L": 1,
+                "ER0": 2,
+                "F": 2,
+                "AH0": 1
+            }
+        },
+        {
+            "alignedWord": "meadow",
+            "case": "success",
+            "end": 1.23,
+            "endOffset": 20,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "m_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "eh_I"
+                },
+                {
+                    "duration": 0.04,
+                    "phone": "d_I"
+                },
+                {
+                    "duration": 0.23,
+                    "phone": "ow_E"
+                }
+            ],
+            "start": 0.82,
+            "startOffset": 14,
+            "word": "meadow",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "M",
+                "EH1",
+                "D",
+                "OW2"
+            ],
+            "init_frame": 20,
+            "final_frame": 30,
+            "diff": 10,
+            "phonemes_frame": {
+                "M": 3,
+                "EH1": 3,
+                "D": 2,
+                "OW2": 2
+            }
+        },
+        {
+            "alignedWord": "a",
+            "case": "success",
+            "end": 1.6800000000000002,
+            "endOffset": 23,
+            "phones": [
+                {
+                    "duration": 0.12,
+                    "phone": "ah_S"
+                }
+            ],
+            "start": 1.56,
+            "startOffset": 22,
+            "word": "a",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0"
+            ],
+            "init_frame": 38,
+            "final_frame": 41,
+            "diff": 3,
+            "phonemes_frame": {
+                "AH0": 3
+            }
+        },
+        {
+            "alignedWord": "tiny",
+            "case": "success",
+            "end": 2.21,
+            "endOffset": 28,
+            "phones": [
+                {
+                    "duration": 0.2,
+                    "phone": "t_B"
+                },
+                {
+                    "duration": 0.16,
+                    "phone": "ay_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "iy_E"
+                }
+            ],
+            "start": 1.68,
+            "startOffset": 24,
+            "word": "tiny",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "T",
+                "AY1",
+                "N",
+                "IY0"
+            ],
+            "init_frame": 41,
+            "final_frame": 54,
+            "diff": 13,
+            "phonemes_frame": {
+                "T": 4,
+                "AY1": 3,
+                "N": 3,
+                "IY0": 3
+            }
+        },
+        {
+            "alignedWord": "seed",
+            "case": "success",
+            "end": 2.6,
+            "endOffset": 33,
+            "phones": [
+                {
+                    "duration": 0.15,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 2.21,
+            "startOffset": 29,
+            "word": "seed",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "IY1",
+                "D"
+            ],
+            "init_frame": 54,
+            "final_frame": 63,
+            "diff": 9,
+            "phonemes_frame": {
+                "S": 3,
+                "IY1": 3,
+                "D": 3
+            }
+        },
+        {
+            "alignedWord": "named",
+            "case": "success",
+            "end": 2.9299999999999997,
+            "endOffset": 39,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "n_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "ey_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "m_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 2.61,
+            "startOffset": 34,
+            "word": "named",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "N",
+                "EY1",
+                "M",
+                "D"
+            ],
+            "init_frame": 63,
+            "final_frame": 71,
+            "diff": 8,
+            "phonemes_frame": {
+                "N": 2,
+                "EY1": 2,
+                "M": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "sprout",
+            "case": "success",
+            "end": 3.4299999999999997,
+            "endOffset": 46,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "aw_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 2.94,
+            "startOffset": 40,
+            "word": "Sprout",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "P",
+                "R",
+                "AW1",
+                "T"
+            ],
+            "init_frame": 71,
+            "final_frame": 83,
+            "diff": 12,
+            "phonemes_frame": {
+                "S": 3,
+                "P": 3,
+                "R": 2,
+                "AW1": 2,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "dreamed",
+            "case": "success",
+            "end": 3.91,
+            "endOffset": 54,
+            "phones": [
+                {
+                    "duration": 0.07,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.17,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "m_I"
+                },
+                {
+                    "duration": 0.01,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 3.43,
+            "startOffset": 47,
+            "word": "dreamed",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 23,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "R",
+                "IY1",
+                "M",
+                "D"
+            ],
+            "init_frame": 83,
+            "final_frame": 94,
+            "diff": 11,
+            "phonemes_frame": {
+                "D": 2,
+                "R": 2,
+                "IY1": 2,
+                "M": 2
+            }
+        },
+        {
+            "alignedWord": "of",
+            "case": "success",
+            "end": 4.07,
+            "endOffset": 57,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "ah_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "v_E"
+                }
+            ],
+            "start": 3.91,
+            "startOffset": 55,
+            "word": "of",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH1",
+                "V"
+            ],
+            "init_frame": 94,
+            "final_frame": 98,
+            "diff": 4,
+            "phonemes_frame": {
+                "AH1": 2,
+                "V": 2
+            }
+        },
+        {
+            "alignedWord": "becoming",
+            "case": "success",
+            "end": 4.55,
+            "endOffset": 66,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "b_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "k_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "m_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "ng_E"
+                }
+            ],
+            "start": 4.08,
+            "startOffset": 58,
+            "word": "becoming",
+            "head_direction": "L",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 18,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "B",
+                "IH0",
+                "K",
+                "AH1",
+                "M",
+                "IH0",
+                "NG"
+            ],
+            "init_frame": 98,
+            "final_frame": 110,
+            "diff": 12,
+            "phonemes_frame": {
+                "B": 2,
+                "IH0": 1,
+                "K": 2,
+                "AH1": 2,
+                "M": 2,
+                "NG": 1
+            }
+        },
+        {
+            "alignedWord": "tall",
+            "case": "success",
+            "end": 5.13,
+            "endOffset": 71,
+            "phones": [
+                {
+                    "duration": 0.11,
+                    "phone": "t_B"
+                },
+                {
+                    "duration": 0.26,
+                    "phone": "ao_I"
+                },
+                {
+                    "duration": 0.21,
+                    "phone": "l_E"
+                }
+            ],
+            "start": 4.55,
+            "startOffset": 67,
+            "word": "tall",
+            "head_direction": "L",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 18,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "T",
+                "AO1",
+                "L"
+            ],
+            "init_frame": 110,
+            "final_frame": 124,
+            "diff": 14,
+            "phonemes_frame": {
+                "T": 5,
+                "AO1": 5,
+                "L": 4
+            }
+        },
+        {
+            "alignedWord": "and",
+            "case": "success",
+            "end": 5.41,
+            "endOffset": 75,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "ae_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 5.19,
+            "startOffset": 72,
+            "word": "and",
+            "head_direction": "L",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 18,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "N",
+                "D"
+            ],
+            "init_frame": 125,
+            "final_frame": 130,
+            "diff": 5,
+            "phonemes_frame": {
+                "AH0": 2,
+                "N": 2,
+                "D": 1
+            }
+        },
+        {
+            "alignedWord": "strong",
+            "case": "success",
+            "end": 6.01,
+            "endOffset": 82,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "ao_I"
+                },
+                {
+                    "duration": 0.22,
+                    "phone": "ng_E"
+                }
+            ],
+            "start": 5.41,
+            "startOffset": 76,
+            "word": "strong",
+            "head_direction": "L",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 18,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "T",
+                "R",
+                "AO1",
+                "NG"
+            ],
+            "init_frame": 130,
+            "final_frame": 145,
+            "diff": 15,
+            "phonemes_frame": {
+                "S": 3,
+                "T": 3,
+                "R": 3,
+                "AO1": 3,
+                "NG": 3
+            }
+        },
+        {
+            "alignedWord": "one",
+            "case": "success",
+            "end": 6.65,
+            "endOffset": 87,
+            "phones": [
+                {
+                    "duration": 0.11,
+                    "phone": "w_B"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "n_E"
+                }
+            ],
+            "start": 6.38,
+            "startOffset": 84,
+            "word": "One",
+            "head_direction": "L",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 18,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "W",
+                "AH1",
+                "N"
+            ],
+            "init_frame": 154,
+            "final_frame": 160,
+            "diff": 6,
+            "phonemes_frame": {
+                "W": 2,
+                "AH1": 2,
+                "N": 2
+            }
+        },
+        {
+            "alignedWord": "day",
+            "case": "success",
+            "end": 7.07,
+            "endOffset": 91,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.33,
+                    "phone": "ey_E"
+                }
+            ],
+            "start": 6.65,
+            "startOffset": 88,
+            "word": "day",
+            "head_direction": "L",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 18,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "EY1"
+            ],
+            "init_frame": 160,
+            "final_frame": 170,
+            "diff": 10,
+            "phonemes_frame": {
+                "D": 5,
+                "EY1": 5
+            }
+        },
+        {
+            "alignedWord": "a",
+            "case": "success",
+            "end": 7.53,
+            "endOffset": 94,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "ah_S"
+                }
+            ],
+            "start": 7.4,
+            "startOffset": 93,
+            "word": "a",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0"
+            ],
+            "init_frame": 178,
+            "final_frame": 181,
+            "diff": 3,
+            "phonemes_frame": {
+                "AH0": 3
+            }
+        },
+        {
+            "alignedWord": "wind",
+            "case": "success",
+            "end": 7.94,
+            "endOffset": 99,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "w_B"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 7.53,
+            "startOffset": 95,
+            "word": "wind",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "W",
+                "AY1",
+                "N",
+                "D"
+            ],
+            "init_frame": 181,
+            "final_frame": 191,
+            "diff": 10,
+            "phonemes_frame": {
+                "W": 3,
+                "AY1": 3,
+                "N": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "whispered",
+            "case": "success",
+            "end": 8.45,
+            "endOffset": 109,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "w_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 7.95,
+            "startOffset": 100,
+            "word": "whispered",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "W",
+                "IH1",
+                "S",
+                "P",
+                "ER0",
+                "D"
+            ],
+            "init_frame": 191,
+            "final_frame": 203,
+            "diff": 12,
+            "phonemes_frame": {
+                "W": 2,
+                "IH1": 2,
+                "S": 2,
+                "P": 2,
+                "ER0": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "stories",
+            "case": "success",
+            "end": 9.02,
+            "endOffset": 117,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "ao_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "z_E"
+                }
+            ],
+            "start": 8.45,
+            "startOffset": 110,
+            "word": "stories",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "T",
+                "AO1",
+                "R",
+                "IY0",
+                "Z"
+            ],
+            "init_frame": 203,
+            "final_frame": 217,
+            "diff": 14,
+            "phonemes_frame": {
+                "S": 3,
+                "T": 3,
+                "AO1": 2,
+                "R": 2,
+                "IY0": 2,
+                "Z": 2
+            }
+        },
+        {
+            "alignedWord": "of",
+            "case": "success",
+            "end": 9.16,
+            "endOffset": 120,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "ah_B"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "v_E"
+                }
+            ],
+            "start": 9.03,
+            "startOffset": 118,
+            "word": "of",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH1",
+                "V"
+            ],
+            "init_frame": 217,
+            "final_frame": 220,
+            "diff": 3,
+            "phonemes_frame": {
+                "AH1": 2,
+                "V": 1
+            }
+        },
+        {
+            "alignedWord": "adventure",
+            "case": "success",
+            "end": 9.85,
+            "endOffset": 130,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "ah_B"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "d_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "v_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "eh_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "ch_I"
+                },
+                {
+                    "duration": 0.26,
+                    "phone": "er_E"
+                }
+            ],
+            "start": 9.16,
+            "startOffset": 121,
+            "word": "adventure",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "AE0",
+                "D",
+                "V",
+                "EH1",
+                "N",
+                "CH",
+                "ER0"
+            ],
+            "init_frame": 220,
+            "final_frame": 237,
+            "diff": 17,
+            "phonemes_frame": {
+                "AE0": 3,
+                "D": 3,
+                "V": 3,
+                "EH1": 2,
+                "N": 2,
+                "CH": 2,
+                "ER0": 2
+            }
+        },
+        {
+            "alignedWord": "and",
+            "case": "success",
+            "end": 10.109999,
+            "endOffset": 134,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "ae_B"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 9.889999,
+            "startOffset": 131,
+            "word": "and",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "N",
+                "D"
+            ],
+            "init_frame": 238,
+            "final_frame": 243,
+            "diff": 5,
+            "phonemes_frame": {
+                "AH0": 2,
+                "N": 2,
+                "D": 1
+            }
+        },
+        {
+            "alignedWord": "courage",
+            "case": "success",
+            "end": 10.54,
+            "endOffset": 142,
+            "phones": [
+                {
+                    "duration": 0.15,
+                    "phone": "k_B"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "jh_E"
+                }
+            ],
+            "start": 10.11,
+            "startOffset": 135,
+            "word": "courage",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "K",
+                "ER1",
+                "AH0",
+                "JH"
+            ],
+            "init_frame": 243,
+            "final_frame": 253,
+            "diff": 10,
+            "phonemes_frame": {
+                "K": 3,
+                "ER1": 3,
+                "AH0": 2,
+                "JH": 2
+            }
+        },
+        {
+            "alignedWord": "to",
+            "case": "success",
+            "end": 10.659999999999998,
+            "endOffset": 145,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "t_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ih_E"
+                }
+            ],
+            "start": 10.54,
+            "startOffset": 143,
+            "word": "to",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "T",
+                "UW1"
+            ],
+            "init_frame": 253,
+            "final_frame": 256,
+            "diff": 3,
+            "phonemes_frame": {
+                "T": 2,
+                "UW1": 1
+            }
+        },
+        {
+            "alignedWord": "sprout",
+            "case": "success",
+            "end": 11.11,
+            "endOffset": 152,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "aw_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 10.66,
+            "startOffset": 146,
+            "word": "Sprout",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "P",
+                "R",
+                "AW1",
+                "T"
+            ],
+            "init_frame": 256,
+            "final_frame": 267,
+            "diff": 11,
+            "phonemes_frame": {
+                "S": 3,
+                "P": 2,
+                "R": 2,
+                "AW1": 2,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "inspired",
+            "case": "success",
+            "end": 12.319999,
+            "endOffset": 162,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.2,
+                    "phone": "ay_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.17,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 11.469999,
+            "startOffset": 154,
+            "word": "Inspired",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH0",
+                "N",
+                "S",
+                "P",
+                "AY1",
+                "ER0",
+                "D"
+            ],
+            "init_frame": 276,
+            "final_frame": 296,
+            "diff": 20,
+            "phonemes_frame": {
+                "IH0": 3,
+                "N": 3,
+                "S": 3,
+                "P": 3,
+                "AY1": 3,
+                "ER0": 3,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "sprout",
+            "case": "success",
+            "end": 12.809999000000001,
+            "endOffset": 170,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "aw_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 12.429999,
+            "startOffset": 164,
+            "word": "Sprout",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "P",
+                "R",
+                "AW1",
+                "T"
+            ],
+            "init_frame": 299,
+            "final_frame": 308,
+            "diff": 9,
+            "phonemes_frame": {
+                "S": 2,
+                "P": 2,
+                "R": 2,
+                "AW1": 2,
+                "T": 1
+            }
+        },
+        {
+            "alignedWord": "decided",
+            "case": "success",
+            "end": 13.279999,
+            "endOffset": 178,
+            "phones": [
+                {
+                    "duration": 0.04,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "ay_I"
+                },
+                {
+                    "duration": 0.02,
+                    "phone": "d_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 12.809999,
+            "startOffset": 171,
+            "word": "decided",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "IH0",
+                "S",
+                "AY1",
+                "D",
+                "IH0",
+                "D"
+            ],
+            "init_frame": 308,
+            "final_frame": 319,
+            "diff": 11,
+            "phonemes_frame": {
+                "D": 1,
+                "IH0": 1,
+                "S": 2,
+                "AY1": 2
+            }
+        },
+        {
+            "alignedWord": "to",
+            "case": "success",
+            "end": 13.35,
+            "endOffset": 181,
+            "phones": [
+                {
+                    "duration": 0.01,
+                    "phone": "t_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ah_E"
+                }
+            ],
+            "start": 13.28,
+            "startOffset": 179,
+            "word": "to",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 16,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "T",
+                "UW1"
+            ],
+            "init_frame": 319,
+            "final_frame": 321,
+            "diff": 2,
+            "phonemes_frame": {
+                "T": 1,
+                "UW1": 1
+            }
+        },
+        {
+            "alignedWord": "push",
+            "case": "success",
+            "end": 13.609999,
+            "endOffset": 186,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "p_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "uh_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "sh_E"
+                }
+            ],
+            "start": 13.349999,
+            "startOffset": 182,
+            "word": "push",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "P",
+                "UH1",
+                "SH"
+            ],
+            "init_frame": 321,
+            "final_frame": 327,
+            "diff": 6,
+            "phonemes_frame": {
+                "P": 2,
+                "UH1": 2,
+                "SH": 2
+            }
+        },
+        {
+            "alignedWord": "through",
+            "case": "success",
+            "end": 13.77,
+            "endOffset": 194,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "th_B"
+                },
+                {
+                    "duration": 0.04,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.04,
+                    "phone": "uw_E"
+                }
+            ],
+            "start": 13.61,
+            "startOffset": 187,
+            "word": "through",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "TH",
+                "R",
+                "UW1"
+            ],
+            "init_frame": 327,
+            "final_frame": 331,
+            "diff": 4,
+            "phonemes_frame": {
+                "TH": 2,
+                "R": 1,
+                "UW1": 1
+            }
+        },
+        {
+            "alignedWord": "the",
+            "case": "success",
+            "end": 13.889999999999999,
+            "endOffset": 198,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "dh_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ah_E"
+                }
+            ],
+            "start": 13.77,
+            "startOffset": 195,
+            "word": "the",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "DH",
+                "AH0"
+            ],
+            "init_frame": 331,
+            "final_frame": 334,
+            "diff": 3,
+            "phonemes_frame": {
+                "DH": 2,
+                "AH0": 1
+            }
+        },
+        {
+            "alignedWord": "soil",
+            "case": "success",
+            "end": 14.389999,
+            "endOffset": 203,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.22,
+                    "phone": "oy_I"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "l_E"
+                }
+            ],
+            "start": 13.889999,
+            "startOffset": 199,
+            "word": "soil",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "OY1",
+                "L"
+            ],
+            "init_frame": 334,
+            "final_frame": 346,
+            "diff": 12,
+            "phonemes_frame": {
+                "S": 4,
+                "OY1": 4,
+                "L": 4
+            }
+        },
+        {
+            "alignedWord": "despite",
+            "case": "success",
+            "end": 15.259999,
+            "endOffset": 212,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "ay_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 14.719999,
+            "startOffset": 205,
+            "word": "Despite",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "IH0",
+                "S",
+                "P",
+                "AY1",
+                "T"
+            ],
+            "init_frame": 354,
+            "final_frame": 367,
+            "diff": 13,
+            "phonemes_frame": {
+                "D": 3,
+                "IH0": 2,
+                "S": 2,
+                "P": 2,
+                "AY1": 2,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "facing",
+            "case": "success",
+            "end": 15.719999000000001,
+            "endOffset": 219,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "f_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "ey_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "ng_E"
+                }
+            ],
+            "start": 15.259999,
+            "startOffset": 213,
+            "word": "facing",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "F",
+                "EY1",
+                "S",
+                "IH0",
+                "NG"
+            ],
+            "init_frame": 367,
+            "final_frame": 378,
+            "diff": 11,
+            "phonemes_frame": {
+                "F": 3,
+                "EY1": 2,
+                "S": 2,
+                "IH0": 2,
+                "NG": 2
+            }
+        },
+        {
+            "alignedWord": "hungry",
+            "case": "success",
+            "end": 16.149999,
+            "endOffset": 226,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "hh_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ng_I"
+                },
+                {
+                    "duration": 0.03,
+                    "phone": "g_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "iy_E"
+                }
+            ],
+            "start": 15.719999,
+            "startOffset": 220,
+            "word": "hungry",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "HH",
+                "AH1",
+                "NG",
+                "G",
+                "R",
+                "IY0"
+            ],
+            "init_frame": 378,
+            "final_frame": 388,
+            "diff": 10,
+            "phonemes_frame": {
+                "HH": 2,
+                "AH1": 2,
+                "NG": 2,
+                "G": 2,
+                "R": 1,
+                "IY0": 1
+            }
+        },
+        {
+            "alignedWord": "insects",
+            "case": "success",
+            "end": 16.69,
+            "endOffset": 234,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "eh_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "k_I"
+                },
+                {
+                    "duration": 0.02,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "s_E"
+                }
+            ],
+            "start": 16.16,
+            "startOffset": 227,
+            "word": "insects",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH1",
+                "N",
+                "S",
+                "EH2",
+                "K",
+                "T",
+                "S"
+            ],
+            "init_frame": 388,
+            "final_frame": 401,
+            "diff": 13,
+            "phonemes_frame": {
+                "IH1": 2,
+                "N": 2,
+                "S": 1,
+                "EH2": 2,
+                "K": 2,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "and",
+            "case": "success",
+            "end": 16.969999,
+            "endOffset": 238,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "ae_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 16.719999,
+            "startOffset": 235,
+            "word": "and",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "N",
+                "D"
+            ],
+            "init_frame": 402,
+            "final_frame": 408,
+            "diff": 6,
+            "phonemes_frame": {
+                "AH0": 2,
+                "N": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "pesky",
+            "case": "success",
+            "end": 17.379999,
+            "endOffset": 244,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "p_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "eh_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "k_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "iy_E"
+                }
+            ],
+            "start": 16.969999,
+            "startOffset": 239,
+            "word": "pesky",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "P",
+                "EH1",
+                "S",
+                "K",
+                "IY0"
+            ],
+            "init_frame": 408,
+            "final_frame": 418,
+            "diff": 10,
+            "phonemes_frame": {
+                "P": 2,
+                "EH1": 2,
+                "S": 2,
+                "K": 2,
+                "IY0": 2
+            }
+        },
+        {
+            "alignedWord": "weeds",
+            "case": "success",
+            "end": 17.869999,
+            "endOffset": 250,
+            "phones": [
+                {
+                    "duration": 0.07,
+                    "phone": "w_B"
+                },
+                {
+                    "duration": 0.17,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "d_I"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "z_E"
+                }
+            ],
+            "start": 17.379999,
+            "startOffset": 245,
+            "word": "weeds",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 24,
+            "intensity": 1,
+            "zoom": 1,
+            "screen_mode": 3,
+            "phonemes": [
+                "W",
+                "IY1",
+                "D",
+                "Z"
+            ],
+            "init_frame": 418,
+            "final_frame": 429,
+            "diff": 11,
+            "phonemes_frame": {
+                "W": 3,
+                "IY1": 3,
+                "D": 3,
+                "Z": 2
+            }
+        },
+        {
+            "alignedWord": "it",
+            "case": "success",
+            "end": 18.169999999999998,
+            "endOffset": 254,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 17.99,
+            "startOffset": 252,
+            "word": "it",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH1",
+                "T"
+            ],
+            "init_frame": 432,
+            "final_frame": 437,
+            "diff": 5,
+            "phonemes_frame": {
+                "IH1": 3,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "persevered",
+            "case": "success",
+            "end": 18.900000000000002,
+            "endOffset": 265,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "p_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "v_I"
+                },
+                {
+                    "duration": 0.14,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.13,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 18.17,
+            "startOffset": 255,
+            "word": "persevered",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "P",
+                "ER2",
+                "S",
+                "AH0",
+                "V",
+                "IH1",
+                "R",
+                "D"
+            ],
+            "init_frame": 437,
+            "final_frame": 454,
+            "diff": 17,
+            "phonemes_frame": {
+                "P": 3,
+                "ER2": 2,
+                "S": 2,
+                "AH0": 2,
+                "V": 2,
+                "IH1": 2,
+                "R": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "days",
+            "case": "success",
+            "end": 19.59,
+            "endOffset": 271,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.16,
+                    "phone": "ey_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "z_E"
+                }
+            ],
+            "start": 19.24,
+            "startOffset": 267,
+            "word": "Days",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "EY1",
+                "Z"
+            ],
+            "init_frame": 462,
+            "final_frame": 471,
+            "diff": 9,
+            "phonemes_frame": {
+                "D": 3,
+                "EY1": 3,
+                "Z": 3
+            }
+        },
+        {
+            "alignedWord": "turned",
+            "case": "success",
+            "end": 19.86,
+            "endOffset": 278,
+            "phones": [
+                {
+                    "duration": 0.12,
+                    "phone": "t_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.04,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.04,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 19.59,
+            "startOffset": 272,
+            "word": "turned",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "T",
+                "ER1",
+                "N",
+                "D"
+            ],
+            "init_frame": 471,
+            "final_frame": 477,
+            "diff": 6,
+            "phonemes_frame": {
+                "T": 2,
+                "ER1": 2,
+                "N": 1,
+                "D": 1
+            }
+        },
+        {
+            "alignedWord": "into",
+            "case": "success",
+            "end": 20.05,
+            "endOffset": 283,
+            "phones": [
+                {
+                    "duration": 0.04,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.03,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "uw_E"
+                }
+            ],
+            "start": 19.86,
+            "startOffset": 279,
+            "word": "into",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH0",
+                "N",
+                "T",
+                "UW1"
+            ],
+            "init_frame": 477,
+            "final_frame": 482,
+            "diff": 5,
+            "phonemes_frame": {
+                "IH0": 2,
+                "N": 1,
+                "T": 1,
+                "UW1": 1
+            }
+        },
+        {
+            "alignedWord": "weeks",
+            "case": "success",
+            "end": 20.54,
+            "endOffset": 289,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "w_B"
+                },
+                {
+                    "duration": 0.14,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "k_I"
+                },
+                {
+                    "duration": 0.2,
+                    "phone": "s_E"
+                }
+            ],
+            "start": 20.05,
+            "startOffset": 284,
+            "word": "weeks",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "W",
+                "IY1",
+                "K",
+                "S"
+            ],
+            "init_frame": 482,
+            "final_frame": 493,
+            "diff": 11,
+            "phonemes_frame": {
+                "W": 3,
+                "IY1": 3,
+                "K": 3,
+                "S": 2
+            }
+        },
+        {
+            "alignedWord": "and",
+            "case": "success",
+            "end": 20.97,
+            "endOffset": 294,
+            "phones": [
+                {
+                    "duration": 0.11,
+                    "phone": "ae_B"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 20.74,
+            "startOffset": 291,
+            "word": "and",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "N",
+                "D"
+            ],
+            "init_frame": 498,
+            "final_frame": 504,
+            "diff": 6,
+            "phonemes_frame": {
+                "AH0": 2,
+                "N": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "sprout",
+            "case": "success",
+            "end": 21.34,
+            "endOffset": 301,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "aw_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 20.97,
+            "startOffset": 295,
+            "word": "Sprout",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "P",
+                "R",
+                "AW1",
+                "T"
+            ],
+            "init_frame": 504,
+            "final_frame": 513,
+            "diff": 9,
+            "phonemes_frame": {
+                "S": 2,
+                "P": 2,
+                "R": 2,
+                "AW1": 2,
+                "T": 1
+            }
+        },
+        {
+            "alignedWord": "grew",
+            "case": "success",
+            "end": 21.759999999999998,
+            "endOffset": 306,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "g_B"
+                },
+                {
+                    "duration": 0.14,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "uw_E"
+                }
+            ],
+            "start": 21.35,
+            "startOffset": 302,
+            "word": "grew",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "G",
+                "R",
+                "UW1"
+            ],
+            "init_frame": 513,
+            "final_frame": 523,
+            "diff": 10,
+            "phonemes_frame": {
+                "G": 4,
+                "R": 3,
+                "UW1": 3
+            }
+        },
+        {
+            "alignedWord": "into",
+            "case": "success",
+            "end": 21.91,
+            "endOffset": 311,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.03,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.01,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.01,
+                    "phone": "ah_E"
+                }
+            ],
+            "start": 21.759999999999998,
+            "startOffset": 307,
+            "word": "into",
+            "head_direction": "L",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 28,
+            "intensity": 2,
+            "zoom": 2,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH0",
+                "N",
+                "T",
+                "UW1"
+            ],
+            "init_frame": 523,
+            "final_frame": 526,
+            "diff": 3,
+            "phonemes_frame": {
+                "IH0": 1,
+                "N": 1,
+                "T": 1,
+                "UW1": 0
+            }
+        },
+        {
+            "alignedWord": "a",
+            "case": "success",
+            "end": 22.150000000000002,
+            "endOffset": 313,
+            "phones": [
+                {
+                    "duration": 0.03,
+                    "phone": "ah_S"
+                }
+            ],
+            "start": 22.12,
+            "startOffset": 312,
+            "word": "a",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0"
+            ],
+            "init_frame": 531,
+            "final_frame": 532,
+            "diff": 1,
+            "phonemes_frame": {
+                "AH0": 1
+            }
+        },
+        {
+            "alignedWord": "majestic",
+            "case": "success",
+            "end": 22.86,
+            "endOffset": 322,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "m_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.15,
+                    "phone": "jh_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "eh_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "k_E"
+                }
+            ],
+            "start": 22.15,
+            "startOffset": 314,
+            "word": "majestic",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "M",
+                "AH0",
+                "JH",
+                "EH1",
+                "S",
+                "T",
+                "IH0",
+                "K"
+            ],
+            "init_frame": 532,
+            "final_frame": 549,
+            "diff": 17,
+            "phonemes_frame": {
+                "M": 3,
+                "AH0": 2,
+                "JH": 2,
+                "EH1": 2,
+                "S": 2,
+                "T": 2,
+                "IH0": 2,
+                "K": 2
+            }
+        },
+        {
+            "alignedWord": "sunflower",
+            "case": "success",
+            "end": 23.55,
+            "endOffset": 332,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "f_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "l_I"
+                },
+                {
+                    "duration": 0.15,
+                    "phone": "aw_I"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "er_E"
+                }
+            ],
+            "start": 22.86,
+            "startOffset": 323,
+            "word": "sunflower",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "AH1",
+                "N",
+                "F",
+                "L",
+                "AW2",
+                "ER0"
+            ],
+            "init_frame": 549,
+            "final_frame": 566,
+            "diff": 17,
+            "phonemes_frame": {
+                "S": 3,
+                "AH1": 3,
+                "N": 3,
+                "F": 2,
+                "L": 2,
+                "AW2": 2,
+                "ER0": 2
+            }
+        },
+        {
+            "alignedWord": "from",
+            "case": "success",
+            "end": 24.12,
+            "endOffset": 338,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "f_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "m_E"
+                }
+            ],
+            "start": 23.91,
+            "startOffset": 334,
+            "word": "From",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "F",
+                "R",
+                "AH1",
+                "M"
+            ],
+            "init_frame": 574,
+            "final_frame": 579,
+            "diff": 5,
+            "phonemes_frame": {
+                "F": 2,
+                "R": 1,
+                "AH1": 1,
+                "M": 1
+            }
+        },
+        {
+            "alignedWord": "above",
+            "case": "success",
+            "end": 24.69,
+            "endOffset": 344,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "ah_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "b_I"
+                },
+                {
+                    "duration": 0.21,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.21,
+                    "phone": "v_E"
+                }
+            ],
+            "start": 24.12,
+            "startOffset": 339,
+            "word": "above",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "B",
+                "AH1",
+                "V"
+            ],
+            "init_frame": 579,
+            "final_frame": 593,
+            "diff": 14,
+            "phonemes_frame": {
+                "AH0": 4,
+                "B": 4,
+                "AH1": 3,
+                "V": 3
+            }
+        },
+        {
+            "alignedWord": "it",
+            "case": "success",
+            "end": 25.26,
+            "endOffset": 348,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 25.09,
+            "startOffset": 346,
+            "word": "it",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH1",
+                "T"
+            ],
+            "init_frame": 603,
+            "final_frame": 607,
+            "diff": 4,
+            "phonemes_frame": {
+                "IH1": 2,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "saw",
+            "case": "success",
+            "end": 25.52,
+            "endOffset": 352,
+            "phones": [
+                {
+                    "duration": 0.13,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.13,
+                    "phone": "ao_E"
+                }
+            ],
+            "start": 25.259999999999998,
+            "startOffset": 349,
+            "word": "saw",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "AO1"
+            ],
+            "init_frame": 607,
+            "final_frame": 613,
+            "diff": 6,
+            "phonemes_frame": {
+                "S": 3,
+                "AO1": 3
+            }
+        },
+        {
+            "alignedWord": "the",
+            "case": "success",
+            "end": 25.63,
+            "endOffset": 356,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "dh_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ah_E"
+                }
+            ],
+            "start": 25.52,
+            "startOffset": 353,
+            "word": "the",
+            "head_direction": "M",
+            "eyes_direction": "L",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 12,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "DH",
+                "AH0"
+            ],
+            "init_frame": 613,
+            "final_frame": 616,
+            "diff": 3,
+            "phonemes_frame": {
+                "DH": 2,
+                "AH0": 1
+            }
+        },
+        {
+            "alignedWord": "world",
+            "case": "success",
+            "end": 26.09,
+            "endOffset": 362,
+            "phones": [
+                {
+                    "duration": 0.12,
+                    "phone": "w_B"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "l_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 25.63,
+            "startOffset": 357,
+            "word": "world",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "W",
+                "ER1",
+                "L",
+                "D"
+            ],
+            "init_frame": 616,
+            "final_frame": 627,
+            "diff": 11,
+            "phonemes_frame": {
+                "W": 3,
+                "ER1": 3,
+                "L": 3,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "and",
+            "case": "success",
+            "end": 26.319999,
+            "endOffset": 366,
+            "phones": [
+                {
+                    "duration": 0.09,
+                    "phone": "ae_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 26.099999,
+            "startOffset": 363,
+            "word": "and",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 22,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "N",
+                "D"
+            ],
+            "init_frame": 627,
+            "final_frame": 632,
+            "diff": 5,
+            "phonemes_frame": {
+                "AH0": 2,
+                "N": 2,
+                "D": 1
+            }
+        },
+        {
+            "alignedWord": "knew",
+            "case": "success",
+            "end": 26.51,
+            "endOffset": 371,
+            "phones": [
+                {
+                    "duration": 0.01,
+                    "phone": "n_B"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "y_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "uw_E"
+                }
+            ],
+            "start": 26.32,
+            "startOffset": 367,
+            "word": "knew",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 22,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "N",
+                "UW1"
+            ],
+            "init_frame": 632,
+            "final_frame": 637,
+            "diff": 5,
+            "phonemes_frame": {
+                "N": 3,
+                "UW1": 2
+            }
+        },
+        {
+            "alignedWord": "it",
+            "case": "success",
+            "end": 26.61,
+            "endOffset": 374,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 26.509999999999998,
+            "startOffset": 372,
+            "word": "it",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 22,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH1",
+                "T"
+            ],
+            "init_frame": 637,
+            "final_frame": 639,
+            "diff": 2,
+            "phonemes_frame": {
+                "IH1": 1,
+                "T": 1
+            }
+        },
+        {
+            "alignedWord": "had",
+            "case": "success",
+            "end": 26.799999999999997,
+            "endOffset": 378,
+            "phones": [
+                {
+                    "duration": 0.07,
+                    "phone": "hh_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "ae_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 26.619999999999997,
+            "startOffset": 375,
+            "word": "had",
+            "head_direction": "R",
+            "eyes_direction": "R",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 22,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "HH",
+                "AE1",
+                "D"
+            ],
+            "init_frame": 639,
+            "final_frame": 644,
+            "diff": 5,
+            "phonemes_frame": {
+                "HH": 2,
+                "AE1": 2,
+                "D": 1
+            }
+        },
+        {
+            "alignedWord": "achieved",
+            "case": "success",
+            "end": 27.220000000000002,
+            "endOffset": 387,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "ah_B"
+                },
+                {
+                    "duration": 0.18,
+                    "phone": "ch_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "v_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 26.8,
+            "startOffset": 379,
+            "word": "achieved",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 3,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "CH",
+                "IY1",
+                "V",
+                "D"
+            ],
+            "init_frame": 644,
+            "final_frame": 654,
+            "diff": 10,
+            "phonemes_frame": {
+                "AH0": 2,
+                "CH": 2,
+                "IY1": 2,
+                "V": 2,
+                "D": 2
+            }
+        },
+        {
+            "alignedWord": "its",
+            "case": "success",
+            "end": 27.38,
+            "endOffset": 391,
+            "phones": [
+                {
+                    "duration": 0.03,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "s_E"
+                }
+            ],
+            "start": 27.22,
+            "startOffset": 388,
+            "word": "its",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH1",
+                "T",
+                "S"
+            ],
+            "init_frame": 654,
+            "final_frame": 658,
+            "diff": 4,
+            "phonemes_frame": {
+                "IH1": 2,
+                "T": 1,
+                "S": 1
+            }
+        },
+        {
+            "alignedWord": "dreams",
+            "case": "success",
+            "end": 28.01,
+            "endOffset": 398,
+            "phones": [
+                {
+                    "duration": 0.05,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.16,
+                    "phone": "iy_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "m_I"
+                },
+                {
+                    "duration": 0.23,
+                    "phone": "z_E"
+                }
+            ],
+            "start": 27.380000000000003,
+            "startOffset": 392,
+            "word": "dreams",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "R",
+                "IY1",
+                "M",
+                "Z"
+            ],
+            "init_frame": 658,
+            "final_frame": 673,
+            "diff": 15,
+            "phonemes_frame": {
+                "D": 3,
+                "R": 3,
+                "IY1": 3,
+                "M": 3,
+                "Z": 3
+            }
+        },
+        {
+            "alignedWord": "sprout",
+            "case": "success",
+            "end": 28.800000000000004,
+            "endOffset": 406,
+            "phones": [
+                {
+                    "duration": 0.14,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.06,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "aw_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 28.380000000000003,
+            "startOffset": 400,
+            "word": "Sprout",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "P",
+                "R",
+                "AW1",
+                "T"
+            ],
+            "init_frame": 682,
+            "final_frame": 692,
+            "diff": 10,
+            "phonemes_frame": {
+                "S": 2,
+                "P": 2,
+                "R": 2,
+                "AW1": 2,
+                "T": 2
+            }
+        },
+        {
+            "alignedWord": "became",
+            "case": "success",
+            "end": 29.16,
+            "endOffset": 413,
+            "phones": [
+                {
+                    "duration": 0.04,
+                    "phone": "b_B"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "k_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "ey_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "m_E"
+                }
+            ],
+            "start": 28.8,
+            "startOffset": 407,
+            "word": "became",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "B",
+                "IH0",
+                "K",
+                "EY1",
+                "M"
+            ],
+            "init_frame": 692,
+            "final_frame": 700,
+            "diff": 8,
+            "phonemes_frame": {
+                "B": 2,
+                "IH0": 2,
+                "K": 2,
+                "EY1": 1,
+                "M": 1
+            }
+        },
+        {
+            "alignedWord": "a",
+            "case": "success",
+            "end": 29.23,
+            "endOffset": 415,
+            "phones": [
+                {
+                    "duration": 0.07,
+                    "phone": "ah_S"
+                }
+            ],
+            "start": 29.16,
+            "startOffset": 414,
+            "word": "a",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0"
+            ],
+            "init_frame": 700,
+            "final_frame": 702,
+            "diff": 2,
+            "phonemes_frame": {
+                "AH0": 2
+            }
+        },
+        {
+            "alignedWord": "symbol",
+            "case": "success",
+            "end": 29.66,
+            "endOffset": 422,
+            "phones": [
+                {
+                    "duration": 0.12,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "m_I"
+                },
+                {
+                    "duration": 0.01,
+                    "phone": "b_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "l_E"
+                }
+            ],
+            "start": 29.23,
+            "startOffset": 416,
+            "word": "symbol",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "IH1",
+                "M",
+                "B",
+                "AH0",
+                "L"
+            ],
+            "init_frame": 702,
+            "final_frame": 712,
+            "diff": 10,
+            "phonemes_frame": {
+                "S": 2,
+                "IH1": 2,
+                "M": 2,
+                "B": 2,
+                "AH0": 1,
+                "L": 1
+            }
+        },
+        {
+            "alignedWord": "of",
+            "case": "success",
+            "end": 29.82,
+            "endOffset": 425,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "ah_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "v_E"
+                }
+            ],
+            "start": 29.67,
+            "startOffset": 423,
+            "word": "of",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH1",
+                "V"
+            ],
+            "init_frame": 713,
+            "final_frame": 716,
+            "diff": 3,
+            "phonemes_frame": {
+                "AH1": 2,
+                "V": 1
+            }
+        },
+        {
+            "alignedWord": "bravery",
+            "case": "success",
+            "end": 30.45,
+            "endOffset": 433,
+            "phones": [
+                {
+                    "duration": 0.08,
+                    "phone": "b_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "ey_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "v_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.17,
+                    "phone": "iy_E"
+                }
+            ],
+            "start": 29.83,
+            "startOffset": 426,
+            "word": "bravery",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "B",
+                "R",
+                "EY1",
+                "V",
+                "ER0",
+                "IY0"
+            ],
+            "init_frame": 716,
+            "final_frame": 731,
+            "diff": 15,
+            "phonemes_frame": {
+                "B": 3,
+                "R": 3,
+                "EY1": 3,
+                "V": 2,
+                "ER0": 2,
+                "IY0": 2
+            }
+        },
+        {
+            "alignedWord": "and",
+            "case": "success",
+            "end": 30.6,
+            "endOffset": 437,
+            "phones": [
+                {
+                    "duration": 0.06,
+                    "phone": "ae_B"
+                },
+                {
+                    "duration": 0.03,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "d_E"
+                }
+            ],
+            "start": 30.46,
+            "startOffset": 434,
+            "word": "and",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AH0",
+                "N",
+                "D"
+            ],
+            "init_frame": 732,
+            "final_frame": 735,
+            "diff": 3,
+            "phonemes_frame": {
+                "AH0": 1,
+                "N": 1,
+                "D": 1
+            }
+        },
+        {
+            "alignedWord": "determination",
+            "case": "success",
+            "end": 31.419999,
+            "endOffset": 451,
+            "phones": [
+                {
+                    "duration": 0.01,
+                    "phone": "d_B"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "t_I"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "er_I"
+                },
+                {
+                    "duration": 0.03,
+                    "phone": "m_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.05,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "ey_I"
+                },
+                {
+                    "duration": 0.12,
+                    "phone": "sh_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ah_I"
+                },
+                {
+                    "duration": 0.15,
+                    "phone": "n_E"
+                }
+            ],
+            "start": 30.599999,
+            "startOffset": 438,
+            "word": "determination",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "D",
+                "IH0",
+                "T",
+                "ER2",
+                "M",
+                "AH0",
+                "N",
+                "EY1",
+                "SH",
+                "AH0",
+                "N"
+            ],
+            "init_frame": 735,
+            "final_frame": 755,
+            "diff": 20,
+            "phonemes_frame": {
+                "D": 2,
+                "IH0": 2,
+                "T": 2,
+                "ER2": 2,
+                "M": 2,
+                "AH0": 1,
+                "N": 1,
+                "EY1": 2,
+                "SH": 2
+            }
+        },
+        {
+            "alignedWord": "inspiring",
+            "case": "success",
+            "end": 32.580000000000005,
+            "endOffset": 462,
+            "phones": [
+                {
+                    "duration": 0.12,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "n_I"
+                },
+                {
+                    "duration": 0.13,
+                    "phone": "s_I"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "p_I"
+                },
+                {
+                    "duration": 0.15,
+                    "phone": "ay_I"
+                },
+                {
+                    "duration": 0.08,
+                    "phone": "r_I"
+                },
+                {
+                    "duration": 0.07,
+                    "phone": "ih_I"
+                },
+                {
+                    "duration": 0.11,
+                    "phone": "ng_E"
+                }
+            ],
+            "start": 31.740000000000002,
+            "startOffset": 453,
+            "word": "inspiring",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH0",
+                "N",
+                "S",
+                "P",
+                "AY1",
+                "R",
+                "IH0",
+                "NG"
+            ],
+            "init_frame": 762,
+            "final_frame": 782,
+            "diff": 20,
+            "phonemes_frame": {
+                "IH0": 2,
+                "N": 3,
+                "S": 3,
+                "P": 3,
+                "AY1": 2,
+                "R": 2,
+                "NG": 2
+            }
+        },
+        {
+            "alignedWord": "all",
+            "case": "success",
+            "end": 32.96,
+            "endOffset": 466,
+            "phones": [
+                {
+                    "duration": 0.23,
+                    "phone": "ao_B"
+                },
+                {
+                    "duration": 0.1,
+                    "phone": "l_E"
+                }
+            ],
+            "start": 32.63,
+            "startOffset": 463,
+            "word": "all",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "AO1",
+                "L"
+            ],
+            "init_frame": 784,
+            "final_frame": 792,
+            "diff": 8,
+            "phonemes_frame": {
+                "AO1": 4,
+                "L": 4
+            }
+        },
+        {
+            "alignedWord": "who",
+            "case": "success",
+            "end": 33.15,
+            "endOffset": 470,
+            "phones": [
+                {
+                    "duration": 0.1,
+                    "phone": "hh_B"
+                },
+                {
+                    "duration": 0.09,
+                    "phone": "uw_E"
+                }
+            ],
+            "start": 32.96,
+            "startOffset": 467,
+            "word": "who",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "HH",
+                "UW1"
+            ],
+            "init_frame": 792,
+            "final_frame": 796,
+            "diff": 4,
+            "phonemes_frame": {
+                "HH": 2,
+                "UW1": 2
+            }
+        },
+        {
+            "alignedWord": "saw",
+            "case": "success",
+            "end": 33.41,
+            "endOffset": 474,
+            "phones": [
+                {
+                    "duration": 0.11,
+                    "phone": "s_B"
+                },
+                {
+                    "duration": 0.15,
+                    "phone": "ao_E"
+                }
+            ],
+            "start": 33.15,
+            "startOffset": 471,
+            "word": "saw",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "S",
+                "AO1"
+            ],
+            "init_frame": 796,
+            "final_frame": 802,
+            "diff": 6,
+            "phonemes_frame": {
+                "S": 3,
+                "AO1": 3
+            }
+        },
+        {
+            "alignedWord": "it",
+            "case": "success",
+            "end": 33.62,
+            "endOffset": 477,
+            "phones": [
+                {
+                    "duration": 0.07,
+                    "phone": "ih_B"
+                },
+                {
+                    "duration": 0.14,
+                    "phone": "t_E"
+                }
+            ],
+            "start": 33.41,
+            "startOffset": 475,
+            "word": "it",
+            "head_direction": "M",
+            "eyes_direction": "M",
+            "character": 1,
+            "emotion": 1,
+            "body_action": 38,
+            "intensity": 1,
+            "zoom": 0,
+            "screen_mode": 3,
+            "phonemes": [
+                "IH1",
+                "T"
+            ],
+            "init_frame": 802,
+            "final_frame": 807,
+            "diff": 5,
+            "phonemes_frame": {
+                "IH1": 3,
+                "T": 2
+            }
+        }
+    ],
+    "FRAME_PER_SECOUND": 24,
+    "AUDO_END_TIME": 34,
+    "TOTAL_VIDEO_FRAMES": 817,
+    "MODE": "normal"
+}

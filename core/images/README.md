@@ -1,0 +1,20 @@
+characters/
+    character1/
+        body/
+            body1.png
+            body2.png
+        head/
+            head1.png
+            head2.png
+        eyes/
+            eyes1.png
+            eyes2.png
+        mouth/
+            mouth1.png
+            mouth2.png
+    character2/
+        body/
+        head/
+        eyes/
+        mouth/
+    ...

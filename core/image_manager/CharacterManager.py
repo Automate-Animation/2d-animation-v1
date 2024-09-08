@@ -3,6 +3,7 @@ import json
 from PIL import Image, ImageOps
 import statistics
 import numpy as np
+import random
 
 
 class CharacterManager:
@@ -17,20 +18,44 @@ class CharacterManager:
     def get_image_path(self, character, asset_type, asset_name):
         return os.path.join(self.base_path, character, asset_type, f"{asset_name}.png")
 
-    def get_body_image_path(self, character, asset_type, asset_name):
-        return os.path.join(self.base_path, character, asset_type, f"{asset_name}.png")
+    def get_random_png_file_name(self, character, asset_type, asset_sub_type):
+
+        full_path = os.path.join(self.base_path, character, asset_type, asset_sub_type)
+
+        png_files = [f for f in os.listdir(full_path) if f.endswith(".png")]
+
+        if not png_files:
+            return None
+
+        selected_file = random.choice(png_files)
+
+        return os.path.splitext(selected_file)[0]
+
+    def get_body_or_background_image_path(
+        self, character, asset_type, asset_sub_type, asset_name
+    ):
+        return os.path.join(
+            self.base_path, character, asset_type, asset_sub_type, f"{asset_name}.png"
+        )
 
     def get_asset_metadata(self, character, asset_type, asset_name):
         return self.metadata[character][asset_type][asset_name]
 
-    def load_image(self, character, asset_type=None, asset_name=None):
-        if asset_type == "body":
-            image_path = self.get_body_image_path(character, asset_type, asset_name)
-        # image_path = self.get_image_path(character, asset_type, asset_name)
-        return Image.open(image_path)
+    def load_image(self, character, asset_type=None, asset_sub_type=None):
+        if asset_type == "body" or asset_type == "background":
+            print(character, asset_type)
+            asset_name = self.get_random_png_file_name(
+                character, asset_type, asset_sub_type
+            )
+            image_path = self.get_body_or_background_image_path(
+                character, asset_type, asset_sub_type, asset_name
+            )
 
-    def get_asset(self, character, asset_type, asset_name):
-        image = self.load_image(character, asset_type, asset_name)
+        # image_path = self.get_image_path(character, asset_type, asset_name)
+        return Image.open(image_path), asset_name
+
+    def get_asset(self, character, asset_type, asset_sub_type):
+        image, asset_name = self.load_image(character, asset_type, asset_sub_type)
         metadata = self.get_asset_metadata(character, asset_type, asset_name)
         return image, metadata
 

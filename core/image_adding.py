@@ -14,9 +14,10 @@ manager = CharacterManager(base_path, metadata_file)
 
 character = "character_1"
 asset_type = "body"
+asset_sub_type = "you"
 asset_name = "body1"
 
-image, metadata = manager.get_asset(character, asset_type, asset_name)
+image, metadata = manager.get_asset(character, asset_type, asset_sub_type)
 print(f"Loaded {asset_name} with metadata: {metadata}")
 image.show()
 

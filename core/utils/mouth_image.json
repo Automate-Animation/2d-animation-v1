@@ -1,0 +1,282 @@
+{
+    "AA0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AA1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AA2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AE0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AE1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AE2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AH0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AH1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AH2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AO0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AO1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AO2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AW0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AW1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AW2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AY0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AY1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "AY2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "B": {
+        "happy": "m_b_close_h",
+        "sad": "m_b_close_s"
+    },
+    "CH": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "D": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "DH": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "EH0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "EH1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "EH2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "ER0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "ER1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "ER2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "EY0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "EY1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "EY2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "F": {
+        "happy": "f_h",
+        "sad": "f_s"
+    },
+    "G": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "HH": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "IH0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "IH1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "IH2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "IY0": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "IY1": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "IY2": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "JH": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "K": {
+        "happy": "a_e_h",
+        "sad": "a_e_s"
+    },
+    "L": {
+        "happy": "l_h",
+        "sad": "l_s"
+    },
+    "M": {
+        "happy": "m_b_close_h",
+        "sad": "m_b_close_s"
+    },
+    "N": {
+        "happy": "th_h",
+        "sad": "th_s"
+    },
+    "NG": {
+        "happy": "th_h",
+        "sad": "th_s"
+    },
+    "OW0": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "OW1": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "OW2": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "OY0": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "OY1": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "OY2": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "P": {
+        "happy": "m_b_close_h",
+        "sad": "m_b_close_s"
+    },
+    "R": {
+        "happy": "th_h",
+        "sad": "th_s"
+    },
+    "S": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "SH": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "T": {
+        "happy": "th_h",
+        "sad": "th_s"
+    },
+    "TH": {
+        "happy": "th_h",
+        "sad": "th_s"
+    },
+    "UH0": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "UH1": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "UH2": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "UW": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "UW0": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "UW1": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "UW2": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "V": {
+        "happy": "f_h",
+        "sad": "f_s"
+    },
+    "W": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "Y": {
+        "happy": "o_small_h",
+        "sad": "o_small_s"
+    },
+    "Z": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    },
+    "ZH": {
+        "happy": "d_j_ch_h",
+        "sad": "d_j_ch_s"
+    }
+}

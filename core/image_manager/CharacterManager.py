@@ -138,17 +138,22 @@ class CharacterManager:
         return ImageOps.mirror(img)
 
 
-# # Example usage
-# base_path = 'characters'
-# metadata_file = 'metadata.json'
+# Example usage
+# base_path = (
+#     "/home/oye/Documents/animation_software/2d-animation-v1/core/images/characters"
+# )
+# metadata_file = "/home/oye/Documents/animation_software/2d-animation-v1/core/images/metadata/metadata.json"
 # manager = CharacterManager(base_path, metadata_file)
 
-# character = 'character1'
-# asset_type = 'head'
-# asset_name = 'head1'
+# character = "character_1"
+# asset_type = "eyes"
+# asset_sub_type = "shock"
+# # exta = {"name":"a_e_h"} # for mouth
+# # extra = {"name":"angry_M"} # for normal eyes
+# extra = {"name": "shock_R", "blink": False}  # for normal eyes
 
-# image, metadata = manager.get_asset(character, asset_type, asset_name)
-# print(f"Loaded {asset_name} with metadata: {metadata}")
+# image, metadata = manager.get_asset(character, asset_type, asset_sub_type, extra)
+# print(f"Loaded {extra} with metadata: {metadata}")
 # image.show()
 
 # # Additional functionality usage

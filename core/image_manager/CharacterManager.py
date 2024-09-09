@@ -38,10 +38,22 @@ class CharacterManager:
             self.base_path, character, asset_type, asset_sub_type, f"{asset_name}.png"
         )
 
+    def get_eyes_blinking_asset_path(
+        self, character, asset_type, asset_sub_type, blink_file, asset_name
+    ):
+        return os.path.join(
+            self.base_path,
+            character,
+            asset_type,
+            asset_sub_type,
+            blink_file,
+            f"{asset_name}.png",
+        )
+
     def get_asset_metadata(self, character, asset_type, asset_name):
         return self.metadata[character][asset_type][asset_name]
 
-    def load_image(self, character, asset_type=None, asset_sub_type=None, exta={}):
+    def load_image(self, character, asset_type=None, asset_sub_type=None, extra={}):
         if asset_type == "body" or asset_type == "background" or asset_type == "head":
             print(character, asset_type)
             asset_name = self.get_random_png_file_name(
@@ -51,14 +63,33 @@ class CharacterManager:
                 character, asset_type, asset_sub_type, asset_name
             )
         elif asset_type == "mouth":
-            asset_name = exta.get('name', None)
+            asset_name = extra.get("name", None)
             image_path = self.get_character_asset_path(
-            character, asset_type, asset_sub_type, asset_name)
+                character, asset_type, asset_sub_type, asset_name
+            )
+        elif asset_type == "eyes":
+            asset_name = extra.get("name", None)
+            blink = extra.get("blink", False)
+            blink_file = asset_sub_type + "_blink"
+            if (
+                blink
+            ):  # reason for separate cuz of blinking of images are in different folder
+                image_path = self.get_eyes_blinking_asset_path(
+                    character, asset_type, asset_sub_type, blink_file, asset_name
+                )
+            else:
+                image_path = self.get_character_asset_path(
+                    character, asset_type, asset_sub_type, asset_name
+                )
+
+            asset_name = asset_sub_type
 
         return Image.open(image_path), asset_name
 
-    def get_asset(self, character, asset_type, asset_sub_type, exta={}):
-        image, asset_name = self.load_image(character, asset_type, asset_sub_type, exta)
+    def get_asset(self, character, asset_type, asset_sub_type, extra={}):
+        image, asset_name = self.load_image(
+            character, asset_type, asset_sub_type, extra
+        )
         if asset_type != "head":
             metadata = self.get_asset_metadata(character, asset_type, asset_name)
         else:

@@ -94,6 +94,8 @@
             "lust_2": { "eye_size": [250, 150], "eye_location": [10, 30] },
             "sad": { "eye_size": [250, 150], "eye_location": [10, 30] },
             "sad_2": { "eye_size": [250, 150], "eye_location": [10, 30] },
+            "shock": { "eye_size": [250, 150], "eye_location": [10, 30] },
+            "shock_2": { "eye_size": [250, 150], "eye_location": [10, 30] },
             "sarcasm": { "eye_size": [250, 150], "eye_location": [10, 30] },
             "sarcasm_2": { "eye_size": [250, 150], "eye_location": [10, 30] },
             "silly": { "eye_size": [250, 150], "eye_location": [10, 30] },

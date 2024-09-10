@@ -38,7 +38,7 @@ def update_assets(data):
             detail = {}
             detail["phoneme"] = phoneme
             detail["frame"] = frame
-
+            detail["emotion"] = emotion
             detail["mouth_name"] = response_json[phoneme][emotion]
             phonemes_frame_details[phoneme] = detail
         each_data["phonemes_frame_details"] = phonemes_frame_details

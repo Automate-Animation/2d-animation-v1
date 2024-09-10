@@ -106,7 +106,7 @@ class CharacterManager:
         self,
         img_bg,
         img_fg,
-        location,
+        position,
         size=30,
         rotation=0,
         mirror=False,
@@ -130,12 +130,47 @@ class CharacterManager:
 
         img_fg = img_fg.resize(dim)
 
-        img_bg.paste(img_fg, location, mask=img_fg)
+        img_bg.paste(img_fg, position, mask=img_fg)
 
         return img_bg
 
     def mirror_image(self, img):
         return ImageOps.mirror(img)
+
+    def adding_eyes_and_mouth(self, face, eye, mouth, metadata):
+
+        new_image = self.adding_image(
+            face,
+            eye,
+            position=metadata["position"],
+            rotation=0,
+            mirror=False,
+            size_cordinates=metadata["size"],
+        )
+
+        new_image = self.adding_image(
+            new_image,
+            mouth,
+            position=metadata["position"],
+            mirror=True,
+            size_cordinates=metadata["size"],
+        )
+        # if face_path[-5] == "R":
+        #     new_image = mirror_image(new_image)
+        return new_image
+
+    def adding_head_and_body(self, head, body, metadata, rotation=0):
+
+        new_image = self.adding_image(
+            body,
+            head,
+            location=metadata["position"],
+            rotation=rotation,
+            mirror=False,
+            size_cordinates=metadata["size"],
+        )
+
+        return new_image
 
 
 # Example usage

@@ -13,6 +13,34 @@ g2p = G2p()
 #   data = json.load(f)
 
 
+def distribute_frames(data):
+    # Extract phonemes
+    phonemes = data["phonemes"]
+
+    init_frame = data["init_frame"]
+    final_frame = data["final_frame"]
+    total_frames = final_frame - init_frame
+
+    # Since we don't have the phones data, we'll distribute frames equally across phonemes
+    phoneme_count = len(phonemes)
+    frames_per_phoneme = total_frames // phoneme_count  # Get base frames per phoneme
+    leftover_frames = total_frames % phoneme_count  # Get remaining frames to distribute
+
+    phonemes_frame = []
+
+    # Distribute frames for each phoneme
+    for idx, phoneme in enumerate(phonemes):
+        frames = frames_per_phoneme
+        if leftover_frames > 0:  # Distribute leftover frames one by one
+            frames += 1
+            leftover_frames -= 1
+
+        # Append the phoneme with its frame count to the list
+        phonemes_frame.append({"name": phoneme, "frames": frames})
+
+    return phonemes_frame
+
+
 def add_phonemes(data, FRAME_PER_SECOUND=24, EXTRA_TIME=0):
     FRAME_PER_SECOUND = FRAME_PER_SECOUND
     AUDO_END_TIME = data["words"][-1]["end"]
@@ -36,26 +64,7 @@ def add_phonemes(data, FRAME_PER_SECOUND=24, EXTRA_TIME=0):
         each_data["diff"] = math.ceil(
             (each_data["final_frame"] - each_data["init_frame"])
         )
-
-        number_of_phonemes = len(each_data["phonemes"])
-        if number_of_phonemes < each_data["diff"]:
-            phonemes_frame = {}
-            num, div = each_data["diff"], number_of_phonemes
-            count_frame = [num // div + (1 if x < num % div else 0) for x in range(div)]
-
-            for i in range(len(count_frame)):
-                phonemes_frame[each_data["phonemes"][i]] = count_frame[i]
-
-        else:
-            phonemes_frame = {}
-            limited_frame = each_data["diff"]
-            for each_phoneme in each_data["phonemes"]:
-                if limited_frame > 0:
-                    phonemes_frame[each_phoneme] = 1
-                    limited_frame -= 1
-                else:
-                    phonemes_frame[each_phoneme] = 0
-        each_data["phonemes_frame"] = phonemes_frame
+        each_data["phonemes_frame"] = distribute_frames(each_data)
 
     data["FRAME_PER_SECOUND"] = FRAME_PER_SECOUND
     data["AUDO_END_TIME"] = AUDO_END_TIME

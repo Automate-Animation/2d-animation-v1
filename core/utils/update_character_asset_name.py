@@ -33,13 +33,13 @@ def update_assets(data):
             emotion = "happy"
         else:
             emotion = "sad"
-        phonemes_frame_details = {}
-        for phoneme, frame in each_data["phonemes_frame"].items():
+        phonemes_frame_details = []
+        for phoneme in each_data["phonemes_frame"]:
             detail = {}
-            detail["phoneme"] = phoneme
-            detail["frame"] = frame
+            detail["phoneme"] = phoneme["name"]
+            detail["frame"] = phoneme["frames"]
             detail["emotion"] = emotion
-            detail["mouth_name"] = response_json[phoneme][emotion]
-            phonemes_frame_details[phoneme] = detail
+            detail["mouth_name"] = response_json[phoneme["name"]][emotion]
+            phonemes_frame_details.append(detail)
         each_data["phonemes_frame_details"] = phonemes_frame_details
     return data

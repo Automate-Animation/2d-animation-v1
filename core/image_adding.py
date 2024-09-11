@@ -15,9 +15,9 @@ manager = CharacterManager(base_path, metadata_file)
 character = "character_1"
 asset_type = "eyes"
 asset_sub_type = "shock"
-# exta = {"name":"a_e_h"} # for mouth
-# extra = {"name":"angry_M"} # for normal eyes
-extra = {"name": "shock_R", "blink": False}  # for normal eyes
+exta = {"name": "a_e_h"}  # for mouth
+extra = {"name": "angry_M"}  # for normal eyes
+# extra = {"name": "shock_R", "blink": False}  # for normal eyes
 
 image, metadata = manager.get_asset(character, asset_type, asset_sub_type, extra)
 print(f"Loaded {extra} with metadata: {metadata}")

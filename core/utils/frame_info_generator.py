@@ -88,20 +88,22 @@ def video_frames_info(data):
         # Write header
         writer.writerow(head)
 
-        alignedWord = ""
-        start = ""
-        end = ""
-        character = ""
-        emotion = ""
-        body = ""
-        head_direction = ""
-        eyes_direction = ""
-        background = ""
-        mouth_emotion = "happy"
-        mouth_name = "m_b_close_h"
         # Write data for each frame
         total_frames = data["TOTAL_VIDEO_FRAMES"]
         word_info = data["words"]
+
+        character = word_info[0]["character_name"]
+        emotion = word_info[0]["emotion_name"]
+        body = word_info[0]["body_name"]
+        head_direction = word_info[0]["head_direction"]
+        eyes_direction = word_info[0]["eyes_direction"]
+        background = word_info[0]["background_name"]
+
+        alignedWord = ""
+        start = ""
+        end = ""
+        mouth_emotion = "happy"
+        mouth_name = "m_b_close_h"
         # phoneme_frame_details = word_info['phonemes_frame_details'][0]
 
         while frame_counter <= total_frames:

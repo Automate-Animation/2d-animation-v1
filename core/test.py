@@ -12,7 +12,7 @@ data = {
         {"duration": 0.07, "phone": "er_I"},
         {"duration": 0.05, "phone": "f_I"},
         {"duration": 0.03, "phone": "ah_I"},
-        {"duration": 0.07, "phone": "l_E"}
+        {"duration": 0.07, "phone": "l_E"},
     ],
     "start": 0.3,
     "startOffset": 5,
@@ -36,9 +36,8 @@ data = {
 }
 
 
-
 # Update the JSON data with the new phonemes_frame list
-data['phonemes_frame'] = distribute_frames(data)
+data["phonemes_frame"] = distribute_frames(data)
 
 # Output the updated data with phonemes_frame
-print(data['phonemes_frame'])
+print(data["phonemes_frame"])

@@ -137,23 +137,23 @@ class CharacterManager:
     def mirror_image(self, img):
         return ImageOps.mirror(img)
 
-    def adding_eyes_and_mouth(self, face, eye, mouth, metadata):
+    def adding_eyes_and_mouth(self, head, eye, mouth, eyes_metadata, mouth_metadata):
 
         new_image = self.adding_image(
-            face,
+            head,
             eye,
-            position=metadata["position"],
+            position=eyes_metadata["position"],
             rotation=0,
             mirror=False,
-            size_cordinates=metadata["size"],
+            size_cordinates=eyes_metadata["size"],
         )
 
         new_image = self.adding_image(
             new_image,
             mouth,
-            position=metadata["position"],
+            position=mouth_metadata["position"],
             mirror=True,
-            size_cordinates=metadata["size"],
+            size_cordinates=mouth_metadata["size"],
         )
         # if face_path[-5] == "R":
         #     new_image = mirror_image(new_image)
@@ -164,13 +164,85 @@ class CharacterManager:
         new_image = self.adding_image(
             body,
             head,
-            location=metadata["position"],
+            position=metadata["position"],
             rotation=rotation,
             mirror=False,
             size_cordinates=metadata["size"],
         )
 
         return new_image
+
+    def adding_background(self, body, background, metadata, rotation=0, zoom=0):
+        new_image = self.adding_image(
+            background,
+            body,
+            position=metadata["position"],
+            rotation=rotation,
+            mirror=True,
+            size_cordinates=metadata["size"],
+        )
+
+        if zoom > 0 and zoom < 8:
+            pass
+            # print("character_number : ", character_number)
+            # print(character_body_cordination_data[character_number][screen_mode])
+            # x = character_body_cordination_data[character_number][screen_mode][
+            #     "zoom_point"
+            # ][0]
+            # y = character_body_cordination_data[character_number][screen_mode][
+            #     "zoom_point"
+            # ][1]
+            # new_image = self.zoom_at(new_image, x, y, zoom)
+
+        return new_image
+
+    def get_character(
+        self,
+        Character,
+        Emotion,
+        Body,
+        Head_Direction,
+        Eyes_Direction,
+        Background,
+        Mouth_Emotion,
+        Mouth_Name,
+        zoom,
+    ):
+        # Head input
+        # character = "character_1"
+        # asset_type = "head"
+        # asset_sub_type = "L"
+        head, _ = self.get_asset(Character, "head", Head_Direction)
+
+        # Eyes input
+        eyes_name = {"name": Eyes_Direction}  # for normal eyes
+        # eyes = {"name": "shock_R", "blink": True}  # for blinking
+        eyes, eyes_metadata = self.get_asset(Character, "eyes", Emotion, eyes_name)
+
+        # mouth
+        mouth_name = {"name": Mouth_Name}
+        mouth, mouth_metadata = self.get_asset(
+            Character, "mouth", Mouth_Emotion, mouth_name
+        )
+
+        head = self.adding_eyes_and_mouth(
+            head, eyes, mouth, eyes_metadata, mouth_metadata
+        )
+
+        # Body Input
+        body, body_metadata = self.get_asset(Character, "body", Body)
+
+        character = self.adding_head_and_body(
+            body=body, head=head, metadata=body_metadata
+        )
+
+        # Background
+        background, background_metadata = self.get_asset(
+            Character, "background", Background
+        )
+
+        scean = self.adding_background(character, background, background_metadata)
+        return scean, background_metadata
 
 
 # Example usage

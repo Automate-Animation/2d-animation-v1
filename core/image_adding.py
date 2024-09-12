@@ -13,13 +13,26 @@ metadata_file = "/home/oye/Documents/animation_software/2d-animation-v1/core/ima
 manager = CharacterManager(base_path, metadata_file)
 
 character = "character_1"
-asset_type = "eyes"
-asset_sub_type = "shock"
-exta = {"name": "a_e_h"}  # for mouth
-extra = {"name": "angry_M"}  # for normal eyes
+asset_type = "head"
+asset_sub_type = "L"
+extra = {}
+# exta = {"name": "a_e_h"}  # for mouth
+# extra = {"name": "angry_M"}  # for normal eyes
 # extra = {"name": "shock_R", "blink": False}  # for normal eyes
-
-image, metadata = manager.get_asset(character, asset_type, asset_sub_type, extra)
+# input
+# character_1, happy, achieve, M, M, green, ,happy, m_b_close_h
+# image, metadata = manager.get_asset(character, asset_type, asset_sub_type, extra)
+image, metadata = manager.get_character(
+    Character="character_1",
+    Emotion="happy_2",
+    Body="achieve",
+    Head_Direction="M",
+    Eyes_Direction="happy_2_M",
+    Background="orange",
+    Mouth_Emotion="happy",
+    Mouth_Name="d_j_ch_h",
+    zoom=0,
+)
 print(f"Loaded {extra} with metadata: {metadata}")
 image.show()
 

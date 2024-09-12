@@ -74,7 +74,8 @@ docs/_build/
 # PyBuilder
 .pybuilder/
 target/
-
+core/video_frames/*.png
+core/videos/*
 # Jupyter Notebook
 .ipynb_checkpoints
 

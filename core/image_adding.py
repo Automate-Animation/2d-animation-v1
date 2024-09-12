@@ -31,7 +31,7 @@ image, metadata = manager.get_character(
     Background="orange",
     Mouth_Emotion="happy",
     Mouth_Name="d_j_ch_h",
-    zoom=0,
+    zoom=1,
 )
 print(f"Loaded {extra} with metadata: {metadata}")
 image.show()

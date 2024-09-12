@@ -97,9 +97,23 @@ class CharacterManager:
         return image, metadata
 
     def zoom_at(self, img, x, y, zoom):
+        # Get the original dimensions of the image
         w, h = img.size
-        zoom2 = zoom * 2
-        img = img.crop((x - w / zoom2, y - h / zoom2, x + w / zoom2, y + h / zoom2))
+
+        # Calculate the dimensions of the crop area
+        crop_width = w / zoom
+        crop_height = h / zoom
+
+        # Calculate the coordinates of the top-left and bottom-right corners of the crop area
+        left = max(x - crop_width / 2, 0)
+        top = max(y - crop_height / 2, 0)
+        right = min(x + crop_width / 2, w)
+        bottom = min(y + crop_height / 2, h)
+
+        # Crop the image
+        img = img.crop((left, top, right, bottom))
+
+        # Resize the cropped image back to the original size
         return img.resize((w, h), Image.LANCZOS)
 
     def adding_image(
@@ -183,16 +197,10 @@ class CharacterManager:
         )
 
         if zoom > 0 and zoom < 8:
-            pass
-            # print("character_number : ", character_number)
-            # print(character_body_cordination_data[character_number][screen_mode])
-            # x = character_body_cordination_data[character_number][screen_mode][
-            #     "zoom_point"
-            # ][0]
-            # y = character_body_cordination_data[character_number][screen_mode][
-            #     "zoom_point"
-            # ][1]
-            # new_image = self.zoom_at(new_image, x, y, zoom)
+            print(metadata["zoom_point"])
+            x = metadata["zoom_point"][0]
+            y = metadata["zoom_point"][1]
+            new_image = self.zoom_at(new_image, x, y, zoom)
 
         return new_image
 
@@ -241,7 +249,12 @@ class CharacterManager:
             Character, "background", Background
         )
 
-        scean = self.adding_background(character, background, background_metadata)
+        scean = self.adding_background(
+            body=character,
+            background=background,
+            metadata=background_metadata,
+            zoom=zoom,
+        )
         return scean, background_metadata
 
 

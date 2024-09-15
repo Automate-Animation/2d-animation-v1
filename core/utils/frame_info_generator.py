@@ -9,7 +9,7 @@ def video_frames_info(data):
     current_time = datetime.now().strftime("-%Y-%m-%d:%H-%M-%S")
 
     # Define the CSV file path with date and time
-    csv_file_path = f"video_frames_info_{current_time}.csv"
+    csv_file_path = f"video_frames_info.csv"
     head = [
         "Frame",
         "Word",
@@ -24,7 +24,8 @@ def video_frames_info(data):
         "Phoneme",
         "Mouth_Emotion",
         "Mouth_Name",
-        "zoom",
+        "Zoom",
+        "Blink",
     ]
     frame_counter = 0
     # Create CSV file and write data
@@ -53,14 +54,16 @@ def video_frames_info(data):
         end = ""
         mouth_emotion = "happy"
         mouth_name = "m_b_close_h"
-        # phoneme_frame_details = word_info['phonemes_frame_details'][0]
+
+        blink_sequence = ["02", "03", "04"]  # Blinking pattern for eyes_direction
+        blink_frame_interval = 80  # Add blink after every 80 frames
+        blink_counter = 0
 
         while frame_counter <= total_frames:
             for each_fagment in word_info:
                 if frame_counter >= int(
                     each_fagment["init_frame"]
                 ) and frame_counter <= int(each_fagment["final_frame"]):
-
                     alignedWord = each_fagment["alignedWord"]
                     start = each_fagment["start"]
                     end = each_fagment["end"]
@@ -83,32 +86,63 @@ def video_frames_info(data):
                         mouth_emotion = phoneme_data["emotion"]
                         mouth_name = phoneme_data["mouth_name"]
                         frame = phoneme_data["frame"]
+
                         for _ in range(frame):
-                            writer.writerow(
-                                [
-                                    frame_counter,
-                                    alignedWord,
-                                    start,
-                                    end,
-                                    character,
-                                    emotion,
-                                    body,
-                                    head_direction,
-                                    eyes_direction,
-                                    background,
-                                    phoneme,
-                                    mouth_emotion,
-                                    mouth_name,
-                                    zoom,
-                                ]
-                            )
-                            frame_counter += 1
+                            # Check if blink should occur in this frame
+                            if blink_counter == blink_frame_interval:
+                                blink_counter = 0  # Reset blink counter
+                                for blink_value in blink_sequence:
+                                    writer.writerow(
+                                        [
+                                            frame_counter,
+                                            alignedWord,
+                                            start,
+                                            end,
+                                            character,
+                                            emotion,
+                                            body,
+                                            head_direction,
+                                            f"{blink_value}",  # Add blink values to eyes_direction
+                                            background,
+                                            phoneme,
+                                            mouth_emotion,
+                                            mouth_name,
+                                            zoom,
+                                            "True",  # Blink is True
+                                        ]
+                                    )
+                                    frame_counter += 1
+                                    blink_counter += 1
+                            else:
+                                writer.writerow(
+                                    [
+                                        frame_counter,
+                                        alignedWord,
+                                        start,
+                                        end,
+                                        character,
+                                        emotion,
+                                        body,
+                                        head_direction,
+                                        eyes_direction,
+                                        background,
+                                        phoneme,
+                                        mouth_emotion,
+                                        mouth_name,
+                                        zoom,
+                                        "False",  # Blink is False
+                                    ]
+                                )
+                                frame_counter += 1
+                                blink_counter += 1
+
             alignedWord = ""
             phoneme = ""
             if mouth_emotion == "happy":
                 mouth_name = "m_b_close_h"
             else:
                 mouth_name = "m_b_close_s"
+
             writer.writerow(
                 [
                     frame_counter,
@@ -125,6 +159,7 @@ def video_frames_info(data):
                     mouth_emotion,
                     mouth_name,
                     zoom,
+                    "False",  # Blink is False
                 ]
             )
 

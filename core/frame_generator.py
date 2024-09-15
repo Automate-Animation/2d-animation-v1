@@ -42,7 +42,8 @@ def save_frames_from_csv(csv_file):
             background = row["Background"]
             mouth_emotion = row["Mouth_Emotion"]
             mouth_name = row["Mouth_Name"]
-            zoom = int(row["zoom"])
+            zoom = int(row["Zoom"])
+            blink = bool(row["Blink"])
             key = (
                 character
                 + emotion
@@ -53,6 +54,7 @@ def save_frames_from_csv(csv_file):
                 + mouth_emotion
                 + mouth_name
                 + str(zoom)
+                + str(blink)
             )
             # Retrieve image and metadata using manager.get_character
             if key not in frame_data["key_counter"]:
@@ -67,6 +69,7 @@ def save_frames_from_csv(csv_file):
                     Mouth_Emotion=mouth_emotion,
                     Mouth_Name=mouth_name,
                     zoom=zoom,
+                    blink=blink,
                 )
 
                 # Save the image for the current frame
@@ -87,4 +90,4 @@ def save_frames_from_csv(csv_file):
 
 
 # Example usage
-save_frames_from_csv("video_frames_info_-2024-09-11:19-04-40.csv")
+save_frames_from_csv("video_frames_info.csv")

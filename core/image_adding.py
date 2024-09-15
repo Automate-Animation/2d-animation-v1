@@ -27,11 +27,12 @@ image, metadata = manager.get_character(
     Emotion="happy_2",
     Body="achieve",
     Head_Direction="M",
-    Eyes_Direction="happy_2_M",
+    Eyes_Direction="04",
     Background="orange",
     Mouth_Emotion="happy",
     Mouth_Name="d_j_ch_h",
     zoom=1,
+    blink=True,
 )
 print(f"Loaded {extra} with metadata: {metadata}")
 image.show()

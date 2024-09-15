@@ -30,7 +30,7 @@ prompts = {
         ```""",
     "eye_movement_instructions": """
         
-        Review the following text carefully. Based on the content and context, provide instructions for eye movements that would look natural and enhance the engagement with the story. The available directions for eye movements are Left (L), Right (R), and Mid (M). The movements should align with the narrative flow, focusing on key elements or shifts in dialogue and scene, and should reflect natural human responses to the story.
+        Review the following text carefully. when character talking to the audiance it should keep changing eye direction every 3 to 7 seconds randomely such that 70 percent of the time its is in the mid and 30 percent of the time left and right, chose left or right randomely, for instance end result might be like 3 seconds M, 1 second R and 5 second M and 3 second L and so on . The available directions for eye movements are Left (L), Right (R), and Mid (M). The movements should align with the narrative flow, focusing on key elements or shifts in dialogue and scene, and should reflect natural human responses to the story.
         
         text:
 

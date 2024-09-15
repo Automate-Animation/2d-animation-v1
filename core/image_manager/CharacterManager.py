@@ -215,6 +215,7 @@ class CharacterManager:
         Mouth_Emotion,
         Mouth_Name,
         zoom,
+        blink=False,
     ):
         # Head input
         # character = "character_1"
@@ -223,7 +224,7 @@ class CharacterManager:
         head, _ = self.get_asset(Character, "head", Head_Direction)
 
         # Eyes input
-        eyes_name = {"name": Eyes_Direction}  # for normal eyes
+        eyes_name = {"name": Eyes_Direction, "blink": blink}  # for normal eyes
         # eyes = {"name": "shock_R", "blink": True}  # for blinking
         eyes, eyes_metadata = self.get_asset(Character, "eyes", Emotion, eyes_name)
 

@@ -54,10 +54,10 @@ def add_phonemes(data, FRAME_PER_SECOUND=24, EXTRA_TIME=0):
         each_data["phonemes"] = g2p(each_data["word"])
         print(each_data["phonemes"])
         each_data["init_frame"] = math.ceil(
-            float(each_data["start"]) * FRAME_PER_SECOUND
+            float(each_data.get("start", 1)) * FRAME_PER_SECOUND
         )
         each_data["final_frame"] = math.ceil(
-            float(each_data["end"]) * FRAME_PER_SECOUND
+            float(each_data.get("end", 1)) * FRAME_PER_SECOUND
         )
 
         # each_data['diff'] = math.floor(  (each_data['final_frame'] - each_data['init_frame']) / len(each_data['phonemes']))

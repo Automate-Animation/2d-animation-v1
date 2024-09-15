@@ -2,8 +2,9 @@
     "character_1": {
         "background": {
             "office": { "size": [750, 1080], "position": [690, 150], "mirror":false, "addition":true , "zoom_point":[950, 370]},
-            "explaination": { "size": [750, 1080], "position": [20, 160], "mirror":false,"addition":true , "zoom_point":[700, 400]},
+            "explanation": { "size": [750, 1080], "position": [20, 160], "mirror":false,"addition":true , "zoom_point":[700, 400]},
             "white": { "size": [750, 1080], "position": [20, 160], "mirror":false,"addition":false, "zoom_point":[120, 216] },
+            "plain": { "size": [750, 1080], "position": [20, 160], "mirror":false,"addition":false, "zoom_point":[120, 216] },
             "black": { "size": [750, 1080], "position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] },
             "green": { "size": [750, 1080], "position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] },
             "orange": { "size": [750, 1080], "position": [250, 160], "mirror":false, "addition":true , "zoom_point":[700, 400] }

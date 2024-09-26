@@ -1,7 +1,9 @@
 prompts = {
     "head_movement_instructions": """
     
-        Review the following text carefully. Based on the text, provide instructions for head movements that would look natural as if you were engaging with the story. The only directions available are Left (L), Right (R), and mid (M). The head movements should align with the narrative flow and emphasize key elements of the story without being overly dynamic.
+        Carefully review the text below and create head movement instructions that feel natural, as if you're actively engaging with the story. You can choose from three directions for the head: Left (L), Right (R), and Mid (M). The head should stay mostly in the Mid position to maintain focus, but slight shifts to Left or Right can highlight key moments in the narrative.
+
+        Make sure the movements flow smoothly with the story, aligning with its structure without being overly animated.
 
         text:
         ```
@@ -10,9 +12,7 @@ prompts = {
         Total Length: {total_length}
         Word Count: {word_count}
 
-        Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
-        Do not return an empty list.
-
+        Cover all important sections of the text and ensure no parts are left out.
 
         Return the instructions in JSON format:
         ```
@@ -30,8 +30,7 @@ prompts = {
         ```""",
     "eye_movement_instructions": """
         
-        Review the following text carefully. when character talking to the audiance it should keep changing eye direction every 3 to 7 seconds randomely such that 70 percent of the time its is in the mid and 30 percent of the time left and right, chose left or right randomely, for instance end result might be like 3 seconds M, 1 second R and 5 second M and 3 second L and so on . The available directions for eye movements are Left (L), Right (R), and Mid (M). The movements should align with the narrative flow, focusing on key elements or shifts in dialogue and scene, and should reflect natural human responses to the story.
-        
+        Review the following text carefully. When the character is talking to the audience, ensuring that 90% of the time, the character looks at the camera (M), and the remaining 10% is split between looking Left (L) and Right (R) randomly. For example, the eye movement might be 3 seconds Mid (M), 1 second Right (R), and 5 seconds Mid (M), 3 seconds Left (L), and so on. The available directions for eye movements are Left (L), Right (R), and Mid (M). The movements should align with the narrative flow and natural human responses to the story.
         text:
 
         ```
@@ -42,10 +41,10 @@ prompts = {
 
         Guidelines for Eye Movement:
 
+            Mid (M): Use this direction 90% of the time, especially when the character is directly engaging with the audience or focusing on the main content of the narrative.
             Left (L): Use this direction when the narrative suggests looking towards something or someone to the left, indicating curiosity, reaction, or attention to a leftward focus.
             Right (R): Use this direction when the narrative suggests looking towards something or someone to the right, indicating curiosity, reaction, or attention to a rightward focus.
-            mid (M): Use this direction when the focus is straightforward, such as direct engagement, contemplation, or neutral focus on the text’s main content.
-                
+       
         Make sure to cover all significant segments of the text and do not omit any part. Ensure the list includes all relevant entries based on the above criteria.
         Do not return an empty list.
 
@@ -267,9 +266,9 @@ prompts = {
         """,
     "get_screen_mode": """
     
-        Review the following text carefully. Identify and select the most suitable background for each segment of the text to enhance the video's engagement and clarity. The background should align with the content's context, tone, and purpose.
+        Carefully review the following text. Identify and select the most thematically appropriate background for each section to enhance the viewer's engagement and clarity of the story. The background should reflect the setting and context of the story, ensuring smooth transitions and maintaining thematic consistency throughout.
 
-        Given the following list of screen mode and their types:
+        Given the following list of screen modes and their types:
 
         ```
         {screen_mode}
@@ -280,6 +279,12 @@ prompts = {
         ```
         {text}
         ```
+
+        Guidelines:
+
+            Select screen modes that correspond to the specific context or setting described in the story (e.g., a café setting for a scene in a café).
+            Avoid changing backgrounds too frequently; focus on significant shifts in the story's location or environment.
+            Ensure the background aligns with the key thematic elements and keeps the viewer immersed in the story.
         Do not return an empty list. ,
 
         Return the instrunction in JSON format

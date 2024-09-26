@@ -13,12 +13,12 @@ if __name__ == "__main__":
     files = [
         (
             "transcript",
-            "/home/oye/Documents/animation_software/2d-animation-v1/example/story/story-2.txt",
+            "/home/oye/Documents/dailyYGStories/A Family Secret Almost Ruined My Wedding—Am I Wrong for Excluding My Brother?.txt",
             "text/plain",
         ),
         (
             "audio",
-            "/home/oye/Documents/animation_software/2d-animation-v1/example/story/story-2-01.m4a",
+            "/home/oye/Documents/dailyYGStories/A Family Secret Almost Ruined My Wedding—Am I Wrong for Excluding My Brother?.mp3",
             "application/octet-stream",
         ),
     ]

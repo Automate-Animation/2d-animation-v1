@@ -48,17 +48,10 @@
     ```
     This will start the Gentle service, typically available at `http://localhost:49153`.
 
-4.  **Google API Key:**
-    The project uses Google Generative AI for text analysis. You will need to obtain a Google API key and configure it.
-    *   In `core/core.py`, update the `GOOGLE_API_KEY` variable with your actual key:
-        ```python
-        GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
-        ```
-
 ### Project Structure
 
 *   `core/`: Contains the main logic for the animation generation.
-    *   `core.py`: Orchestrates the entire animation generation pipeline.
+    *   `main.py`: Orchestrates the entire animation generation pipeline.
     *   `brain_requests/`: Handles interactions with AI services (transcription, text analysis).
     *   `image_manager/`: Manages character image assets.
         *   `CharacterManager.py`: Loads, composites, and manages character parts.
@@ -66,8 +59,6 @@
         *   `characters/`: Contains subdirectories for each character and their respective image parts (body, eyes, head, mouth).
         *   `metadata/metadata.json`: Defines properties and positions for character assets.
     *   `utils/`: Utility scripts for various tasks (phoneme generation, asset updates).
-    *   `frame_generator.py`: Generates individual animation frames as PNG images.
-    *   `frame_to_video.py`: Compiles PNG frames into a video file.
 *   `Docker/`: Contains Docker configuration for services like Gentle.
     *   `docker-compose.yml`: Defines the Gentle service.
 *   `example/story/`: Contains example audio (.mp3, .m4a) and text (.txt) files.
@@ -84,33 +75,17 @@
     *   Create a text script file (e.g., `my_story.txt`).
     *   Create a corresponding audio file (e.g., `my_story.mp3`). Ensure the audio matches the script content for proper alignment.
 
-2.  **Configure `core/core.py`:**
-    *   Update the `files` variable in `core/core.py` to point to your script and audio files:
-        ```python
-        files = [
-            ("transcript", "path/to/your/my_story.txt", "text/plain"),
-            ("audio", "path/to/your/my_story.mp3", "application/octet-stream"),
-        ]
-        ```
-    *   Ensure `GOOGLE_API_KEY` is set.
-
-3.  **Run the main script:**
+2.  **Run the main script:**
     ```bash
-    python core/core.py
+    python core/main.py --audio_path <path_to_audio_file> --transcript_path <path_to_transcript_file> --google_api_key <your_google_api_key> --video_name <output_video_name>
     ```
-    This will:
-    *   Process the audio and text.
-    *   Generate animation data (e.g., `output_test.json`, `video_frames_info.csv`).
-    *   Create individual frames in the `video_frames/` directory (this directory will be created if it doesn't exist).
-    *   Create `frameCreationInfo.json` in the root directory.
 
-4.  **Generate the video:**
-    After `core/core.py` has finished and the frames are generated, run the `frame_to_video.py` script:
-    ```bash
-    python core/frame_to_video.py --name my_animation_video
-    ```
-    *   Replace `my_animation_video` with your desired output video name.
-    *   The output video (e.g., `my_animation_video.avi`) will be saved in the `videos/` directory (this directory will be created if it doesn't exist).
+    ### Arguments
+
+    - `--audio_path`: Path to the audio file.
+    - `--transcript_path`: Path to the transcript file.
+    - `--google_api_key`: Your Google API key.
+    - `--video_name`: (Optional) Name of the output video file (default: "output").
 
 ## Character Customization
 

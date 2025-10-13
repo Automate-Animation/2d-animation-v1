@@ -7,6 +7,21 @@ from PIL import Image, ImageOps
 import statistics
 import numpy as np
 
+
+def parse_blink_value(value):
+    """Parse blink values from CSV input into a strict boolean."""
+    if isinstance(value, bool):
+        return value
+
+    if value is None:
+        return False
+
+    if isinstance(value, (int, float)):
+        return value == 1
+
+    normalized = str(value).strip().lower()
+    return normalized in {"true", "1"}
+
 # Assuming manager is defined and contains the get_character method
 # Replace manager.get_character with your own method to load character images
 base_path = "./images/characters"
@@ -41,7 +56,7 @@ def save_frames_from_csv(csv_file):
             mouth_emotion = row["Mouth_Emotion"]
             mouth_name = row["Mouth_Name"]
             zoom = int(row["Zoom"])
-            blink = bool(row["Blink"])
+            blink = parse_blink_value(row.get("Blink"))
             key = (
                 character
                 + emotion

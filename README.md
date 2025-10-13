@@ -48,9 +48,15 @@ Check out animations created with synctoon on our YouTube channel: [**Daily YG S
    docker-compose up -d
    ```
 
-4. **Configure your API key:**
-   - Open `core/core.py`
-   - Replace `GOOGLE_API_KEY = "..."` with your actual Google API key
+4. **Configure your inputs:**
+   - Export your Google API key (and optionally override default example assets):
+     ```bash
+     export GOOGLE_API_KEY="your-google-api-key"
+     export SYNCTOON_TRANSCRIPT_PATH="/path/to/your_story.txt"   # optional
+     export SYNCTOON_AUDIO_PATH="/path/to/your_story.mp3"        # optional
+     export SYNCTOON_SERVICE_URL="http://localhost:49153/transcriptions?async=false"  # optional
+     ```
+   - Alternatively, provide the values via CLI flags when you run the pipeline (see below).
 
 ### Create Your First Animation
 
@@ -58,9 +64,17 @@ Check out animations created with synctoon on our YouTube channel: [**Daily YG S
    - Text script: `example/story/your_story.txt`
    - Audio file: `example/story/your_story.mp3`
 
-2. **Generate the animation:**
+2. **Generate the animation metadata (and optionally override paths/API keys per run):**
    ```bash
    cd core
+   python core.py --transcript ../example/story/your_story.txt \
+                  --audio ../example/story/your_story.mp3 \
+                  --api-key "$GOOGLE_API_KEY"
+   ```
+   Use `python core.py --help` to see all available configuration flags and environment variables.
+
+   To run the full pipeline (core processing, frame generation, and video assembly) in one step, use:
+   ```bash
    python create_animation.py -n "my_first_animation"
    ```
 

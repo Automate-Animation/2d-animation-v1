@@ -1,16 +1,38 @@
 import json
-from utils.constants import emotions, body_actions, screen_mode, characters
+import logging
+from pathlib import Path
 
-with open("utils/mouth_image.json", "r") as json_file:
-    response_json = json.load(json_file)
+from utils.constants import emotions, body_actions, screen_mode
 
-# print(response_json)
+
+LOGGER = logging.getLogger(__name__)
+
+
+def _load_mouth_image_mapping():
+    mouth_image_path = Path(__file__).resolve().parent / "mouth_image.json"
+    try:
+        with mouth_image_path.open("r", encoding="utf-8") as json_file:
+            return json.load(json_file)
+    except FileNotFoundError as exc:
+        raise FileNotFoundError(
+            f"Unable to locate mouth image configuration file at {mouth_image_path}"
+        ) from exc
+    except json.JSONDecodeError as exc:
+        raise ValueError(
+            f"Failed to parse mouth image configuration file at {mouth_image_path}: {exc}"
+        ) from exc
+
+
+response_json = _load_mouth_image_mapping()
+
+
 happy_mouth = ["happy", "content", "sarcasm", "crazy", "evil_laugh", "lust", "silly"]
-print(emotions)
 
 
 def update_assets(data):
-    for each_data in data["words"]:
+    words = data.get("words", [])
+    LOGGER.debug("Updating assets for %d word(s)", len(words))
+    for each_data in words:
         # emotion
         if int(each_data["intensity"]) == 2:
             each_data["emotion_name"] = emotions.get(each_data["emotion"]) + "_2"

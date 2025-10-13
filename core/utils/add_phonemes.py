@@ -1,13 +1,46 @@
 import json
+import logging
 import math
 
 import nltk
 
-nltk.download("averaged_perceptron_tagger_eng")
-
 from g2p_en import G2p
 
-g2p = G2p()
+
+logger = logging.getLogger(__name__)
+
+_G2P_MODEL = None
+_TAGGER_RESOURCE = "averaged_perceptron_tagger_eng"
+_TAGGER_PATH = f"taggers/{_TAGGER_RESOURCE}"
+
+
+def ensure_nltk_resource(resource_id, resource_path=None):
+    """Ensure the given NLTK resource is available, downloading when needed."""
+
+    resource_path = resource_path or resource_id
+    try:
+        nltk.data.find(resource_path)
+    except LookupError:
+        logger.warning(
+            "Missing NLTK resource '%s'. Attempting download.", resource_id
+        )
+        try:
+            nltk.download(resource_id, quiet=True)
+            nltk.data.find(resource_path)
+        except LookupError as exc:
+            logger.warning(
+                "Unable to locate NLTK resource '%s' after download attempt: %s",
+                resource_id,
+                exc,
+            )
+            raise
+
+
+def get_g2p_model():
+    global _G2P_MODEL
+    if _G2P_MODEL is None:
+        _G2P_MODEL = G2p()
+    return _G2P_MODEL
 # file_name = 'G:/Projects/speech aligner/kamal speech aliner/speach_aliner/app/json/json_data_for_frame/kamal.json'
 # with open(file_name, 'r') as f:
 #   data = json.load(f)
@@ -50,8 +83,10 @@ def add_phonemes(data, FRAME_PER_SECOUND=24, EXTRA_TIME=0):
     print("FRAME_PER_SECOUND:", FRAME_PER_SECOUND)
     print("AUDO_END_TIME  : ", AUDO_END_TIME)
     # print(data['fragments'][0])
+    ensure_nltk_resource(_TAGGER_RESOURCE, _TAGGER_PATH)
+    g2p_model = get_g2p_model()
     for each_data in data.get("words"):
-        each_data["phonemes"] = g2p(each_data["word"])
+        each_data["phonemes"] = g2p_model(each_data["word"])
         print(each_data["phonemes"])
         each_data["init_frame"] = math.ceil(
             float(each_data.get("start", 1)) * FRAME_PER_SECOUND

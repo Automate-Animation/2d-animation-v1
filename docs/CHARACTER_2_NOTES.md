@@ -82,7 +82,4 @@ at t=0; fix: set `"character": 2` on that word in output_test.json and rerun wit
 classroom + office; bodies achieve/chilling/question/why/explain; emotions happy/content; zoom 1-2 used.
 Outputs copied to `core/build/qa/teacher_test_render/`: teacher_test.mp4 (raw cv2 mp4v), teacher_test_av.mp4
 (h264 + AAC from voice.mp3: 1920x1080, 15.58 s), frame_1s/5s/9s/13s.png — all four frames clean (head on collar,
-eyes/mouth in place, zoom frames correct). Caveat: my copy of the raw cv2 `mp4v` file decodes only 338/386 frames
-("header damaged" in ffprobe); test_claude.mp4 from the other run is clean, so this is most likely a partial copy taken
-while the coordinator's own teacher_test run was re-writing videos/teacher_test.mp4 (shared CWD), not a character issue.
-Re-check with the coordinator's teacher_test.mp4; the four extracted frames themselves are intact.
+eyes/mouth in place, zoom frames correct). Raw cv2 mp4v file: 386/386 frames decodable once the writer had finalised (an earlier copy taken 12 s too early was truncated).

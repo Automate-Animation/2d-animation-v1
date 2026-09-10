@@ -1,6 +1,7 @@
 annotated-types==0.7.0
+anthropic
 attrs==25.3.0
-black==24.8.0
+# black==24.8.0  # dev-only formatter, not a runtime dep
 cachetools==5.5.0
 certifi==2024.7.4
 charset-normalizer==3.3.2

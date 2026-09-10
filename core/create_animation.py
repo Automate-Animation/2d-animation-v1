@@ -12,7 +12,7 @@ import time
 from datetime import datetime
 
 
-def run_script(script_name, description):
+def run_script(script_name, description, extra_args=None):
     """Run a Python script and handle errors."""
     print(f"\n{'='*60}")
     print(f"STEP: {description}")
@@ -20,10 +20,9 @@ def run_script(script_name, description):
     print(f"{'='*60}")
 
     try:
+        cmd = [sys.executable, script_name] + (extra_args or [])
         # Run the script using Python
-        result = subprocess.run(
-            [sys.executable, script_name], capture_output=False, text=True, check=True
-        )
+        result = subprocess.run(cmd, capture_output=False, text=True, check=True)
         print(f"✅ {description} completed successfully!")
         return True
 
@@ -69,6 +68,13 @@ def main():
         description="Create animation video from script and audio"
     )
     parser.add_argument("-n", "--name", help="Name for the output video file", type=str)
+    parser.add_argument("--script", required=True, help="Path to the story text file.")
+    parser.add_argument(
+        "--audio",
+        help="Path to an existing audio file. If omitted, audio is synthesized via ElevenLabs.",
+    )
+    parser.add_argument("--out-dir", help="Output directory (default: ./build/<name>).")
+    parser.add_argument("--fps", type=int, default=24, help="Frames per second (default 24).")
     parser.add_argument(
         "--skip-core", action="store_true", help="Skip core.py (use existing CSV)"
     )
@@ -79,6 +85,13 @@ def main():
     )
 
     args = parser.parse_args()
+
+    name_for_dir = args.name or os.path.splitext(os.path.basename(args.script))[0]
+    out_dir = args.out_dir or os.path.join("build", name_for_dir)
+
+    core_args = ["--script", args.script, "--out-dir", out_dir, "--fps", str(args.fps)]
+    if args.audio:
+        core_args += ["--audio", args.audio]
 
     print("🎬 Animation Video Creation Pipeline")
     print("=" * 60)
@@ -93,7 +106,9 @@ def main():
 
     # Step 1: Run core.py
     if not args.skip_core:
-        success = run_script("core.py", "Processing script and audio (core.py)")
+        success = run_script(
+            "core.py", "Processing script and audio (core.py)", extra_args=core_args
+        )
         if not success:
             print("\n❌ Pipeline failed at core.py step!")
             sys.exit(1)

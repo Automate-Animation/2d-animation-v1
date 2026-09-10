@@ -1,71 +1,108 @@
+import argparse
+import json
+import os
+
 from brain_requests.speach_aligner import TranscriptionService
 from brain_requests.text_aligner import TextAnalyzer
 from brain_requests.utils import update_values
-import json
-import time
 from utils.add_phonemes import add_phonemes
 from utils.constants import emotions, body_actions, screen_mode, characters
 from utils.update_character_asset_name import update_assets
 from utils.frame_info_generator import video_frames_info
 
-if __name__ == "__main__":
-    url = "http://localhost:49153/transcriptions?async=false"
-    files = [
-        (
-            "transcript",
-            "/home/oye/Downloads/2d-animation-v1/example/story/breakup.txt",
-            "text/plain",
-        ),
-        (
-            "audio",
-            "/home/oye/Downloads/2d-animation-v1/example/story/breakup.mp3",
-            "application/octet-stream",
-        ),
-    ]
 
-    GOOGLE_API_KEY = ""
+def parse_args():
+    parser = argparse.ArgumentParser(description="Analyze script+audio into frame instructions.")
+    parser.add_argument("--script", required=True, help="Path to the story text file.")
+    parser.add_argument(
+        "--audio",
+        help="Path to an existing audio file. If omitted, audio is synthesized via ElevenLabs.",
+    )
+    parser.add_argument("--out-dir", help="Output directory (default: ./build/<name>).")
+    parser.add_argument("--fps", type=int, default=24, help="Frames per second (default 24).")
+    return parser.parse_args()
 
-    # Initialize the TextAnalyzer class
-    analyzer = TextAnalyzer(api_key=GOOGLE_API_KEY)
 
-    service = TranscriptionService(files=files)
-    response_json = service.send_request()
+def get_alignment(script_text, audio_path, out_dir):
+    """Return a Gentle-shaped {"transcript","words"} dict.
+
+    --audio given  -> align that file with Gentle (ElevenLabs can only align audio
+                       it generated itself, so there's no ElevenLabs path here).
+    --audio absent -> synthesize via ElevenLabs and use its own word timestamps.
+    """
+    if audio_path:
+        script_path = os.path.join(out_dir, "script.txt")
+        with open(script_path, "w") as f:
+            f.write(script_text)
+        files = [
+            ("transcript", script_path, "text/plain"),
+            ("audio", audio_path, "application/octet-stream"),
+        ]
+        service = TranscriptionService(files=files)
+        return service.send_request()
+
+    voice_path = os.path.join(out_dir, "voice.mp3")
+    alignment_path = os.path.splitext(voice_path)[0] + ".alignment.json"
+
+    # ponytail: reuse a prior ElevenLabs synth if this out-dir already has one (e.g. a
+    # retry after a crash downstream) so we don't burn characters re-synthesizing the
+    # same script. Delete the alignment JSON (or the whole out-dir) to force a fresh call.
+    if os.path.exists(alignment_path) and os.path.exists(voice_path):
+        print(f"Reusing existing synthesis: {voice_path}")
+        with open(alignment_path) as f:
+            return json.load(f)
+
+    # No audio supplied: synthesize via ElevenLabs and use its own alignment.
+    from brain_requests import tts
+
+    return tts.synthesize(script_text, voice_path)
+
+
+def main():
+    args = parse_args()
+
+    with open(args.script) as f:
+        script_text = f.read()
+
+    name = os.path.splitext(os.path.basename(args.script))[0]
+    out_dir = args.out_dir or os.path.join("build", name)
+    os.makedirs(out_dir, exist_ok=True)
+
+    # Initialize the TextAnalyzer class (provider/model come from env — see llm.py)
+    analyzer = TextAnalyzer()
+
+    response_json = get_alignment(script_text, args.audio, out_dir)
     transcript = response_json["transcript"]
+
     head_movement = analyzer.get_head_movement_instructions(transcript)
-    time.sleep(6)
     eyes_movement = analyzer.get_eyes_movement_instructions(transcript)
-    time.sleep(6)
     character = analyzer.get_character(transcript, characters)
-    time.sleep(6)
-    emotions = analyzer.get_emotion(transcript, emotions)
-    time.sleep(6)
+    emotions_result = analyzer.get_emotion(transcript, emotions)
     body_action = analyzer.get_body_action(transcript, body_actions)
-    time.sleep(6)
     intensity = analyzer.get_intensity(transcript)
-    time.sleep(6)
     zoom = analyzer.get_zoom(transcript)
-    time.sleep(6)
-    screen_mode = analyzer.get_screen_mode(transcript, screen_mode)
+    screen_mode_result = analyzer.get_screen_mode(transcript, screen_mode)
 
     update_values(response_json, head_movement, "head_direction", "M")
     update_values(response_json, eyes_movement, "eyes_direction", "M")
     update_values(response_json, character, "character", 1)
-    update_values(response_json, emotions, "emotion", 1)
+    update_values(response_json, emotions_result, "emotion", 1)
     update_values(response_json, body_action, "body_action", 3)
     update_values(response_json, intensity, "intensity", 1)
     update_values(response_json, zoom, "zoom", 0)
-    update_values(response_json, screen_mode, "screen_mode", 1)
+    update_values(response_json, screen_mode_result, "screen_mode", 1)
 
     # add Phonemes and Frames
-    add_phonemes(response_json)
+    add_phonemes(response_json, FRAME_PER_SECOUND=args.fps)
     update_assets(response_json)
     video_frames_info(response_json)
-    with open("output_test.json", "w") as json_file:
+
+    out_path = os.path.join(out_dir, "output_test.json")
+    with open(out_path, "w") as json_file:
         json.dump(response_json, json_file, indent=4)
 
-    # with open("output_test.json", "r") as json_file:
-    #     response_json = json.load(json_file)
-    # video_frames_info(response_json)
-    # print(response_json)
-    # with open("update_assets_output_fi.json", "w") as json_file:
-    #     json.dump(response_json, json_file, indent=4)
+    print(f"Wrote {out_path}")
+
+
+if __name__ == "__main__":
+    main()

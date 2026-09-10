@@ -1,5 +1,4 @@
 import json
-import google.generativeai as genai
 from .prompts import prompts
 from .validater import (
     CharacterSchema,
@@ -13,21 +12,17 @@ from .validater import (
     ScreenModeSchema,
 )
 from .utils import retry
+from . import llm
 
 
 class TextAnalyzer:
-    def __init__(self, api_key, model_name="gemini-2.0-flash", prompt_file=prompts):
+    # ponytail: api_key/model_name kept as no-op params for call-site compatibility —
+    # provider/model selection now lives in llm.py via LLM_PROVIDER/LLM_MODEL env vars.
+    def __init__(self, api_key=None, model_name=None, prompt_file=prompts):
         self.api_key = api_key
         self.model_name = model_name
         self.prompt_file = prompt_file
-        self._configure_api()
-        self.model = genai.GenerativeModel(self.model_name)
-        self.chat = self.model.start_chat(history=[])
         self.prompts = prompts
-
-    def _configure_api(self):
-        print("Configuring API with provided API key...")
-        genai.configure(api_key=self.api_key)
 
     def analyze_string(self, text):
         total_length = len(text)
@@ -38,23 +33,28 @@ class TextAnalyzer:
         return total_length, word_count
 
     def _send_message_and_extract(self, prompt, schema):
-        # Sends a prompt to the chat model and extracts the JSON content
+        # Sends a prompt to the LLM and extracts the JSON content. Each call is
+        # independent (no chat history needed across these prompts).
         max_attempts = 3
         attempts = 0
+        data = None
+        message = None
 
         while attempts < max_attempts:
-            response = self.chat.send_message(prompt)
-            data = self.extract_json_content(response.text)
+            response_text = llm.complete(prompt)
+            data = self.extract_json_content(response_text)
             status, message = validate_data(data, schema)
 
             if status:
-                break
+                return data
 
             # Update prompt with validation message
             prompt = prompt + "\n" + str(message)
             attempts += 1
 
-        return data
+        raise ValueError(
+            f"LLM response failed validation after {max_attempts} attempts: {message}"
+        )
 
     def remove_json_code_block_markers(self, response):
         return response.replace("```JSON\n", "").replace("```", "")
@@ -190,8 +190,8 @@ class TextAnalyzer:
 # Usage example
 if __name__ == "__main__":
     print("Starting main execution...")
-    # Replace YOUR_API_KEY_HERE with your actual API key
-    GOOGLE_API_KEY = "AIzaSyCpzGmA1jU2601Nyg1hMDposu_8WHYBdQY"
+    import os
+    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")  # provider/key come from .env via llm.py
 
     # Initialize the TextAnalyzer class
     analyzer = TextAnalyzer(api_key=GOOGLE_API_KEY)

@@ -1,5 +1,6 @@
 characters = {
     1: {"name": "Hero", "type": "Protagonist"},
+    2: {"name": "Teacher", "type": "Educator"},
     # 2: {"name": "Villain", "type": "Antagonist"},
     # 3: {"name": "Sidekick", "type": "Supporting"},
     # 4: {"name": "Mentor", "type": "Supporting"},

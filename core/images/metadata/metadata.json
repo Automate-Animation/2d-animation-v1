@@ -1,183 +1,3478 @@
 {
     "character_1": {
         "background": {
-            "office": { "size": [750, 1080], "position": [690, 150], "mirror": false, "addition": true, "zoom_point": [950, 370] },
-            "explanation": { "size": [750, 1080], "position": [20, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "white": { "size": [750, 1080], "position": [20, 160], "mirror": false, "addition": false, "zoom_point": [120, 216] },
-            "plain": { "size": [750, 1080], "position": [20, 160], "mirror": false, "addition": false, "zoom_point": [120, 216] },
-            "black": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "green": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "orange": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "abandant-street": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "bar": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "bedroom-1": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "bedroom-2": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "classroom": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "dining-room": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "dream-forest": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "empty-classroom": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "forest": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "garden": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "green-backyard": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "indoor-living-room-and-study-area": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "kitchen": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "kitchen-and-dining-room": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "kitchen-dining": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "library-and-book-shop": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "living-room-1": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "living-room-2": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "outdoor-cafe": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "park": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "sitting-area": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "store": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "street": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "train-station": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] },
-            "yellow": { "size": [750, 1080], "position": [250, 160], "mirror": false, "addition": true, "zoom_point": [700, 400] }
-        },        
-        "body": {
-            "body1": { "size": [285, 255], "position": [240, 35] },
-            "body2": { "size": [285, 255], "position": [240, 25] },
-            "body3": { "size": [285, 255], "position": [240, 25] },
-            "body4": { "size": [285, 255], "position": [240, 25] },
-            "body5": { "size": [285, 255], "position": [240, 25] },
-            "body6": { "size": [285, 255], "position": [240, 35] },
-            "body7": { "size": [285, 255], "position": [240, 35] },
-            "body8": { "size": [285, 255], "position": [240, 25] },
-            "body9": { "size": [285, 255], "position": [240, 25] },
-            "body10": { "size": [285, 255], "position": [240, 35] },
-            "body11": { "size": [285, 255], "position": [220, 25] },
-            "body12": { "size": [285, 255], "position": [220, 25] },
-            "body13": { "size": [285, 255], "position": [240, 35] },
-            "body14": { "size": [285, 255], "position": [240, 35] },
-            "body15": { "size": [285, 255], "position": [240, 35] },
-            "body16": { "size": [285, 255], "position": [240, 35] },
-            "body17": { "size": [285, 255], "position": [240, 25] },
-            "body18": { "size": [285, 255], "position": [240, 35] },
-            "body19": { "size": [285, 255], "position": [210, 35] },
-            "body20": { "size": [285, 255], "position": [210, 35] },
-            "body21": { "size": [285, 255], "position": [510, 55] },
-            "body22": { "size": [285, 255], "position": [5, 160] },
-            "body23": { "size": [285, 255], "position": [230, 40] },
-            "body24": { "size": [285, 255], "position": [500, 60] },
-            "body25": { "size": [285, 255], "position": [200, 60] },
-            "body26": { "size": [285, 255], "position": [350, 80] },
-            "body27": { "size": [285, 255], "position": [450, 150] },
-            "body28": { "size": [285, 255], "position": [230, 30] },
-            "body29": { "size": [285, 255], "position": [10, 350] },
-            "body30": { "size": [285, 255], "position": [230, 35] },
-            "body31": { "size": [285, 255], "position": [230, 35] },
-            "body32": { "size": [285, 255], "position": [230, 35] },
-            "body33": { "size": [285, 255], "position": [230, 25] },
-            "body34": { "size": [285, 255], "position": [230, 25] },
-            "body35": { "size": [285, 255], "position": [230, 25] },
-            "body36": { "size": [285, 255], "position": [150, 125] },
-            "body37": { "size": [285, 255], "position": [230, 35] },
-            "body38": { "size": [285, 255], "position": [230, 25] },
-            "body39": { "size": [285, 255], "position": [230, 25] },
-            "body40": { "size": [285, 255], "position": [230, 25] },
-            "body41": { "size": [285, 255], "position": [230, 25] },
-            "body42": { "size": [285, 255], "position": [230, 25] },
-            "body43": { "size": [285, 255], "position": [500, 150] },
-            "body44": { "size": [285, 255], "position": [250, 40] },
-            "body45": { "size": [285, 255], "position": [250, 40] },
-            "body46": { "size": [285, 255], "position": [250, 35] },
-            "body47": { "size": [285, 255], "position": [250, 30] },
-            "body48": { "size": [285, 255], "position": [250, 30] },
-            "body49": { "size": [285, 255], "position": [250, 30] },
-            "body50": { "size": [285, 255], "position": [250, 25] },
-            "body51": { "size": [285, 255], "position": [250, 25] },
-            "body52": { "size": [285, 255], "position": [250, 30] },
-            "body53": { "size": [285, 255], "position": [225, 45] },
-            "body54": { "size": [285, 255], "position": [255, 25] },
-            "body55": { "size": [285, 255], "position": [255, 25] },
-            "body56": { "size": [285, 255], "position": [255, 25] },
-            "body57": { "size": [285, 255], "position": [255, 25] },
-            "body58": { "size": [285, 255], "position": [255, 25] },
-            "body59": { "size": [285, 255], "position": [295, 125] },
-            "body60": { "size": [285, 255], "position": [245, 45] },
-            "body61": { "size": [310, 275], "position": [235, 15] },
-            "body62": { "size": [285, 255], "position": [255, 25] },
-            "body63": { "size": [285, 255], "position": [245, 100] },
-            "body64": { "size": [285, 255], "position": [245, 30] },
-            "body65": { "size": [285, 255], "position": [280, 35] }
+            "office": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    690,
+                    150
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    950,
+                    370
+                ]
+            },
+            "explanation": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    20,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "white": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    20,
+                    160
+                ],
+                "mirror": false,
+                "addition": false,
+                "zoom_point": [
+                    120,
+                    216
+                ]
+            },
+            "plain": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    20,
+                    160
+                ],
+                "mirror": false,
+                "addition": false,
+                "zoom_point": [
+                    120,
+                    216
+                ]
+            },
+            "black": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "green": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "orange": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "abandant-street": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "bar": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "bedroom-1": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "bedroom-2": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "classroom": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "dining-room": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "dream-forest": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "empty-classroom": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "forest": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "garden": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "green-backyard": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "indoor-living-room-and-study-area": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "kitchen": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "kitchen-and-dining-room": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "kitchen-dining": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "library-and-book-shop": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "living-room-1": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "living-room-2": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "outdoor-cafe": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "park": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "sitting-area": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "store": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "street": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "train-station": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "yellow": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            },
+            "gardan": {
+                "size": [
+                    750,
+                    1080
+                ],
+                "position": [
+                    250,
+                    160
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    700,
+                    400
+                ]
+            }
         },
-        "eyes":{
-            "angry": { "size": [250, 150], "position": [10, 30] },
-            "angry_2": { "size": [250, 150], "position": [10, 30] },
-            "bore": { "size": [250, 150], "position": [10, 30] },
-            "bore_2": { "size": [250, 150], "position": [10, 30] },
-            "content": { "size": [250, 150], "position": [10, 30] },
-            "content_2": { "size": [250, 150], "position": [10, 30] },
-            "crazy": { "size": [250, 150], "position": [10, 30] },
-            "crazy_2": { "size": [250, 150], "position": [10, 30] },
-            "evil_laugh": { "size": [250, 150], "position": [10, 30] },
-            "evil_laugh_2": { "size": [250, 150], "position": [10, 30] },
-            "glare": { "size": [250, 150], "position": [10, 30] },
-            "glare_2": { "size": [250, 150], "position": [10, 30] },
-            "happy": { "size": [250, 150], "position": [10, 30] },
-            "happy_2": { "size": [250, 150], "position": [10, 30] },
-            "lust": { "size": [250, 150], "position": [10, 30] },
-            "lust_2": { "size": [250, 150], "position": [10, 30] },
-            "sad": { "size": [250, 150], "position": [10, 30] },
-            "sad_2": { "size": [250, 150], "position": [10, 30] },
-            "shock": { "size": [250, 150], "position": [10, 30] },
-            "shock_2": { "size": [250, 150], "position": [10, 30] },
-            "sarcasm": { "size": [250, 150], "position": [10, 30] },
-            "sarcasm_2": { "size": [250, 150], "position": [10, 30] },
-            "silly": { "size": [250, 150], "position": [10, 30] },
-            "silly_2": { "size": [250, 150], "position": [10, 30] },
-            "spoked": { "size": [250, 180], "position": [10, 0] },
-            "spoked_2": { "size": [250, 110], "position": [10, 0] },
-            "worried": { "size": [250, 150], "position": [10, 30] },
-            "worried_2": { "size": [250, 150], "position": [5, 30] }
+        "body": {
+            "body1": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body2": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body3": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body4": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body5": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body6": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body7": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body8": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body9": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body10": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body11": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    220,
+                    25
+                ]
+            },
+            "body12": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    220,
+                    25
+                ]
+            },
+            "body13": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body14": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body15": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body16": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body17": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    25
+                ]
+            },
+            "body18": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    240,
+                    35
+                ]
+            },
+            "body19": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    210,
+                    35
+                ]
+            },
+            "body20": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    210,
+                    35
+                ]
+            },
+            "body21": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    510,
+                    55
+                ]
+            },
+            "body22": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    5,
+                    160
+                ]
+            },
+            "body23": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    40
+                ]
+            },
+            "body24": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    500,
+                    60
+                ]
+            },
+            "body25": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    200,
+                    60
+                ]
+            },
+            "body26": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    350,
+                    80
+                ]
+            },
+            "body27": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    450,
+                    150
+                ]
+            },
+            "body28": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    30
+                ]
+            },
+            "body29": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    10,
+                    350
+                ]
+            },
+            "body30": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    35
+                ]
+            },
+            "body31": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    35
+                ]
+            },
+            "body32": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    35
+                ]
+            },
+            "body33": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body34": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body35": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body36": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    150,
+                    125
+                ]
+            },
+            "body37": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    35
+                ]
+            },
+            "body38": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body39": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body40": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body41": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body42": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    230,
+                    25
+                ]
+            },
+            "body43": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    500,
+                    150
+                ]
+            },
+            "body44": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    40
+                ]
+            },
+            "body45": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    40
+                ]
+            },
+            "body46": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    35
+                ]
+            },
+            "body47": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    30
+                ]
+            },
+            "body48": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    30
+                ]
+            },
+            "body49": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    30
+                ]
+            },
+            "body50": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    25
+                ]
+            },
+            "body51": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    25
+                ]
+            },
+            "body52": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    250,
+                    30
+                ]
+            },
+            "body53": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    225,
+                    45
+                ]
+            },
+            "body54": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    255,
+                    25
+                ]
+            },
+            "body55": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    255,
+                    25
+                ]
+            },
+            "body56": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    255,
+                    25
+                ]
+            },
+            "body57": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    255,
+                    25
+                ]
+            },
+            "body58": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    255,
+                    25
+                ]
+            },
+            "body59": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    295,
+                    125
+                ]
+            },
+            "body60": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    245,
+                    45
+                ]
+            },
+            "body61": {
+                "size": [
+                    310,
+                    275
+                ],
+                "position": [
+                    235,
+                    15
+                ]
+            },
+            "body62": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    255,
+                    25
+                ]
+            },
+            "body63": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    245,
+                    100
+                ]
+            },
+            "body64": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    245,
+                    30
+                ]
+            },
+            "body65": {
+                "size": [
+                    285,
+                    255
+                ],
+                "position": [
+                    280,
+                    35
+                ]
+            }
+        },
+        "eyes": {
+            "angry": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "angry_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "bore": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "bore_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "content": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "content_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "crazy": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "crazy_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "evil_laugh": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "evil_laugh_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "glare": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "glare_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "happy": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "happy_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "lust": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "lust_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "sad": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "sad_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "shock": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "shock_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "sarcasm": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "sarcasm_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "silly": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "silly_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "spoked": {
+                "size": [
+                    250,
+                    180
+                ],
+                "position": [
+                    10,
+                    0
+                ]
+            },
+            "spoked_2": {
+                "size": [
+                    250,
+                    110
+                ],
+                "position": [
+                    10,
+                    0
+                ]
+            },
+            "worried": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    10,
+                    30
+                ]
+            },
+            "worried_2": {
+                "size": [
+                    250,
+                    150
+                ],
+                "position": [
+                    5,
+                    30
+                ]
+            }
         },
         "mouth": {
-            "a_e_h": { "size": [110, 55], "position": [60, 200] },
-            "d_j_ch_h": { "size": [110, 55], "position": [60, 200] },
-            "f_h": { "size": [110, 55], "position": [60, 200] },
-            "l_h": { "size": [110, 55], "position": [60, 200] },
-            "m_b_close_h": { "size": [110, 15], "position": [60, 220] },
-            "o_big_h": { "size": [50, 50], "position": [80, 200] },
-            "o_small_h": { "size": [40, 40], "position": [80, 200] },
-            "oh_h": { "size": [50, 50], "position": [80, 200] },
-            "th_h": { "size": [110, 55], "position": [60, 200] },
-            "trans_h": { "size": [110, 45], "position": [60, 200] },
-            "trans_s": { "size": [110, 45], "position": [60, 200] },
-            "a_e_s": { "size": [110, 45], "position": [60, 200] },
-            "d_j_ch_s": { "size": [110, 45], "position": [60, 200] },
-            "f_s": { "size": [110, 45], "position": [60, 200] },
-            "l_s": { "size": [110, 45], "position": [60, 200] },
-            "m_b_close_s": { "size": [110, 15], "position": [60, 220] },
-            "o_big_s": { "size": [50, 50], "position": [80, 200] },
-            "o_small_s": { "size": [40, 40], "position": [80, 200] },
-            "oh_s": { "size": [50, 50], "position": [80, 200] },
-            "th_s": { "size": [110, 45], "position": [60, 200] },
-            "angry": { "size": [120, 55], "position": [80, 220] },
-            "angry_2": { "size": [120, 55], "position": [80, 220] },
-            "bore": { "size": [120, 55], "position": [80, 220] },
-            "bore_2": { "size": [120, 55], "position": [80, 220] },
-            "content": { "size": [120, 55], "position": [80, 220] },
-            "content_2": { "size": [120, 55], "position": [80, 220] },
-            "crazy": { "size": [220, 105], "position": [50, 180] },
-            "crazy_2": { "size": [220, 105], "position": [50, 180] },
-            "evil_laugh": { "size": [200, 100], "position": [50, 170] },
-            "evil_laugh_2": { "size": [200, 100], "position": [50, 170] },
-            "glare": { "size": [80, 55], "position": [40, 180] },
-            "glare_2": { "size": [200, 55], "position": [80, 180] },
-            "happy": { "size": [200, 100], "position": [40, 180] },
-            "happy_2": { "size": [200, 100], "position": [40, 180] },
-            "lust": { "size": [200, 100], "position": [40, 180] },
-            "lust_2": { "size": [200, 100], "position": [40, 180] },
-            "sad": { "size": [200, 55], "position": [80, 190] },
-            "sad_2": { "size": [200, 55], "position": [80, 190] },
-            "sarcasm": { "size": [200, 55], "position": [50, 190] },
-            "sarcasm_2": { "size": [200, 55], "position": [50, 190] },
-            "silly": { "size": [180, 110], "position": [60, 170] },
-            "silly_2": { "size": [180, 110], "position": [60, 170] },
-            "spoked": { "size": [180, 110], "position": [40, 170] },
-            "spoked_2": { "size": [210, 240], "position": [0, 60] },
-            "worried": { "size": [210, 70], "position": [40, 180] },
-            "worried_2": { "size": [210, 70], "position": [40, 180] }
+            "a_e_h": {
+                "size": [
+                    110,
+                    55
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "d_j_ch_h": {
+                "size": [
+                    110,
+                    55
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "f_h": {
+                "size": [
+                    110,
+                    55
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "l_h": {
+                "size": [
+                    110,
+                    55
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "m_b_close_h": {
+                "size": [
+                    110,
+                    15
+                ],
+                "position": [
+                    60,
+                    220
+                ]
+            },
+            "o_big_h": {
+                "size": [
+                    50,
+                    50
+                ],
+                "position": [
+                    80,
+                    200
+                ]
+            },
+            "o_small_h": {
+                "size": [
+                    40,
+                    40
+                ],
+                "position": [
+                    80,
+                    200
+                ]
+            },
+            "oh_h": {
+                "size": [
+                    50,
+                    50
+                ],
+                "position": [
+                    80,
+                    200
+                ]
+            },
+            "th_h": {
+                "size": [
+                    110,
+                    55
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "trans_h": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "trans_s": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "a_e_s": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "d_j_ch_s": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "f_s": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "l_s": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "m_b_close_s": {
+                "size": [
+                    110,
+                    15
+                ],
+                "position": [
+                    60,
+                    220
+                ]
+            },
+            "o_big_s": {
+                "size": [
+                    50,
+                    50
+                ],
+                "position": [
+                    80,
+                    200
+                ]
+            },
+            "o_small_s": {
+                "size": [
+                    40,
+                    40
+                ],
+                "position": [
+                    80,
+                    200
+                ]
+            },
+            "oh_s": {
+                "size": [
+                    50,
+                    50
+                ],
+                "position": [
+                    80,
+                    200
+                ]
+            },
+            "th_s": {
+                "size": [
+                    110,
+                    45
+                ],
+                "position": [
+                    60,
+                    200
+                ]
+            },
+            "angry": {
+                "size": [
+                    120,
+                    55
+                ],
+                "position": [
+                    80,
+                    220
+                ]
+            },
+            "angry_2": {
+                "size": [
+                    120,
+                    55
+                ],
+                "position": [
+                    80,
+                    220
+                ]
+            },
+            "bore": {
+                "size": [
+                    120,
+                    55
+                ],
+                "position": [
+                    80,
+                    220
+                ]
+            },
+            "bore_2": {
+                "size": [
+                    120,
+                    55
+                ],
+                "position": [
+                    80,
+                    220
+                ]
+            },
+            "content": {
+                "size": [
+                    120,
+                    55
+                ],
+                "position": [
+                    80,
+                    220
+                ]
+            },
+            "content_2": {
+                "size": [
+                    120,
+                    55
+                ],
+                "position": [
+                    80,
+                    220
+                ]
+            },
+            "crazy": {
+                "size": [
+                    220,
+                    105
+                ],
+                "position": [
+                    50,
+                    180
+                ]
+            },
+            "crazy_2": {
+                "size": [
+                    220,
+                    105
+                ],
+                "position": [
+                    50,
+                    180
+                ]
+            },
+            "evil_laugh": {
+                "size": [
+                    200,
+                    100
+                ],
+                "position": [
+                    50,
+                    170
+                ]
+            },
+            "evil_laugh_2": {
+                "size": [
+                    200,
+                    100
+                ],
+                "position": [
+                    50,
+                    170
+                ]
+            },
+            "glare": {
+                "size": [
+                    80,
+                    55
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            },
+            "glare_2": {
+                "size": [
+                    200,
+                    55
+                ],
+                "position": [
+                    80,
+                    180
+                ]
+            },
+            "happy": {
+                "size": [
+                    200,
+                    100
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            },
+            "happy_2": {
+                "size": [
+                    200,
+                    100
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            },
+            "lust": {
+                "size": [
+                    200,
+                    100
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            },
+            "lust_2": {
+                "size": [
+                    200,
+                    100
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            },
+            "sad": {
+                "size": [
+                    200,
+                    55
+                ],
+                "position": [
+                    80,
+                    190
+                ]
+            },
+            "sad_2": {
+                "size": [
+                    200,
+                    55
+                ],
+                "position": [
+                    80,
+                    190
+                ]
+            },
+            "sarcasm": {
+                "size": [
+                    200,
+                    55
+                ],
+                "position": [
+                    50,
+                    190
+                ]
+            },
+            "sarcasm_2": {
+                "size": [
+                    200,
+                    55
+                ],
+                "position": [
+                    50,
+                    190
+                ]
+            },
+            "silly": {
+                "size": [
+                    180,
+                    110
+                ],
+                "position": [
+                    60,
+                    170
+                ]
+            },
+            "silly_2": {
+                "size": [
+                    180,
+                    110
+                ],
+                "position": [
+                    60,
+                    170
+                ]
+            },
+            "spoked": {
+                "size": [
+                    180,
+                    110
+                ],
+                "position": [
+                    40,
+                    170
+                ]
+            },
+            "spoked_2": {
+                "size": [
+                    210,
+                    240
+                ],
+                "position": [
+                    0,
+                    60
+                ]
+            },
+            "worried": {
+                "size": [
+                    210,
+                    70
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            },
+            "worried_2": {
+                "size": [
+                    210,
+                    70
+                ],
+                "position": [
+                    40,
+                    180
+                ]
+            }
+        }
+    },
+    "character_2": {
+        "eyes": {
+            "happy": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "happy_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "sad": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "sad_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "angry": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "angry_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "bore": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "bore_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "content": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "content_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "glare": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "glare_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "sarcasm": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "sarcasm_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "worried": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "worried_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "crazy": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "crazy_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "evil_laugh": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "evil_laugh_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "lust": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "lust_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "shock": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "shock_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "silly": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "silly_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "spoked": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            },
+            "spoked_2": {
+                "position": [
+                    55,
+                    62
+                ],
+                "size": [
+                    250,
+                    130
+                ]
+            }
+        },
+        "mouth": {
+            "a_e_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "a_e_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "d_j_ch_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "d_j_ch_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "f_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "f_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "l_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "l_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "m_b_close_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "m_b_close_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "o_big_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "o_big_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "oh_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "oh_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "o_small_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "o_small_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "th_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "th_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "trans_h": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            },
+            "trans_s": {
+                "position": [
+                    125,
+                    205
+                ],
+                "size": [
+                    110,
+                    55
+                ]
+            }
+        },
+        "body": {
+            "achieve": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "answer": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "chilling": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "come": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "confuse": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "crazy": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "dancing": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "explain": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "feeling_down": {
+                "position": [
+                    220,
+                    62
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    362
+                ]
+            },
+            "hi": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "i": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "idea": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "idk": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "joy": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "jumping": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "kung_fu": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "love": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "me": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "meditation": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "model": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "not_me": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "paper": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "praying": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "question": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "running": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "search": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "shy": {
+                "position": [
+                    220,
+                    58
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    358
+                ]
+            },
+            "singing": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "sneaky": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "standing": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "technical": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "that": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "thinking": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "this": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "what": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "why": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "winner": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "yeah": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            },
+            "you": {
+                "position": [
+                    220,
+                    50
+                ],
+                "size": [
+                    360,
+                    300
+                ],
+                "neck": [
+                    400,
+                    350
+                ]
+            }
+        },
+        "background": {
+            "abandant-street": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "bar": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "bedroom-1": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "bedroom-2": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "black": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "classroom": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "dining-room": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "dream-forest": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "empty-classroom": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "explanation": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "forest": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "gardan": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "garden": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "green": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "green-backyard": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "indoor-living-room-and-study-area": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "kitchen": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "kitchen-and-dining-room": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "kitchen-dining": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "library-and-book-shop": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "living-room-1": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "living-room-2": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "office": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "outdoor-cafe": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "park": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "plain": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "sitting-area": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "store": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "street": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "train-station": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "white": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            },
+            "yellow": {
+                "size": [
+                    800,
+                    1080
+                ],
+                "position": [
+                    560,
+                    0
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    200
+                ]
+            }
         }
     }
 }

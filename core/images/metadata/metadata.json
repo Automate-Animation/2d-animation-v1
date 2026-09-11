@@ -3474,5 +3474,1553 @@
                 ]
             }
         }
+    },
+    "character_3": {
+        "eyes": {
+            "happy": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "happy_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "sad": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "sad_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "angry": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "angry_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "bore": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "bore_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "content": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "content_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "glare": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "glare_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "sarcasm": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "sarcasm_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "worried": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "worried_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "crazy": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "crazy_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "evil_laugh": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "evil_laugh_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "lust": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "lust_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "shock": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "shock_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "silly": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "silly_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "spoked": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            },
+            "spoked_2": {
+                "position": [
+                    221,
+                    423
+                ],
+                "size": [
+                    454,
+                    165
+                ]
+            }
+        },
+        "mouth": {
+            "a_e_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "a_e_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "d_j_ch_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "d_j_ch_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "f_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "f_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "l_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "l_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "m_b_close_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "m_b_close_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "o_big_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "o_big_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "o_small_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "o_small_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "oh_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "oh_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "th_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "th_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "trans_h": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            },
+            "trans_s": {
+                "position": [
+                    357,
+                    592
+                ],
+                "size": [
+                    180,
+                    100
+                ]
+            }
+        },
+        "body": {
+            "achieve": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "answer": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "chilling": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "come": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "confuse": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "crazy": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "dancing": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "explain": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "feeling_down": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "hi": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "i": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "idea": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "idk": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "joy": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "jumping": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "kung_fu": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "love": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "me": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "meditation": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "model": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "not_me": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "paper": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "praying": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "question": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "running": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "search": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "shy": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "singing": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "sneaky": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "standing": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "technical": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "that": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "thinking": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "this": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "what": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "why": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "winner": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "yeah": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            },
+            "you": {
+                "position": [
+                    236,
+                    60
+                ],
+                "size": [
+                    380,
+                    500
+                ],
+                "neck": [
+                    426.0,
+                    545
+                ]
+            }
+        },
+        "background": {
+            "abandant-street": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "bar": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "bedroom-1": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "bedroom-2": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "black": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "classroom": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "dining-room": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "dream-forest": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "empty-classroom": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "explanation": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "forest": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "gardan": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "garden": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "green": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "green-backyard": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "indoor-living-room-and-study-area": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "kitchen": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "kitchen-and-dining-room": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "kitchen-dining": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "library-and-book-shop": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "living-room-1": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "living-room-2": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "office": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "outdoor-cafe": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "park": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "plain": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "sitting-area": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "store": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "street": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "train-station": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "white": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            },
+            "yellow": {
+                "size": [
+                    748,
+                    1026
+                ],
+                "position": [
+                    586,
+                    54
+                ],
+                "mirror": false,
+                "addition": true,
+                "zoom_point": [
+                    960,
+                    238
+                ]
+            }
+        }
     }
 }
